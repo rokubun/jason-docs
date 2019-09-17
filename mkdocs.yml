@@ -1,0 +1,27 @@
+site_name: "Jason  documentation"
+site_url: "https://jason.docs.rokubun.cat"
+theme:
+  name: material
+  logo: 'images/jason_logo.png'
+  favicon: 'images/favicon.ico'
+  palette:
+    primary: 'deep orange'
+    accent: 'blue grey'
+  #custom_dir: 'custom'
+  rokubun_url: 'https://jason.rokubun.cat'
+nav:
+  - 'Description': index.md
+  - 'Usage': usage.md
+  - 'API': api.md
+extra_css:
+  - 'stylesheets/extra.css'
+repo_name: 'rokubun/jason-docs'
+repo_url: 'https://github.com/rokubun/jason-docs'
+extra:
+  social:
+    - type: 'globe'
+      link: 'https://www.rokubun.cat'
+    - type: 'twitter'
+      link: 'https://twitter.com/rokubn'
+    - type: 'linkedin'
+      link: 'https://www.linkedin.com/company/rokubun/'
