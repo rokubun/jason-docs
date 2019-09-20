@@ -13,6 +13,5 @@ e-mail: [info@rokubun.cat](mailto:info@rokubun.cat?subject=[Jason doc] contact f
 </br>
 </br>
 
-We will always appreciate any feedback you might have. Do not hesitate to
-fill-up our [user satisfaction survey](https://docs.google.com/forms/d/1Z7HgCQI3DAIPkym0UjqVqKgP5VjeNn4IsiCnOcio6OM/) to let us know your opinion, it will
-take you less than 2 minutes.
+We will always appreciate any feedback you might have. If you have a couple of minutes,
+fill-up our [user satisfaction survey](https://docs.google.com/forms/d/1Z7HgCQI3DAIPkym0UjqVqKgP5VjeNn4IsiCnOcio6OM/).
