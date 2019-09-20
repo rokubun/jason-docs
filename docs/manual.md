@@ -6,7 +6,7 @@ Currently, Jason is a series of wrappers around the open-source package
 [rtklib](http://wwww.rtklib.com) that offers the possibility, among other tools,
 to process the data using the 4 techniques mentioned above.
 
-As mentioned, Jason works on a best-effort basis, and attemps to run these
+As mentioned, Jason works on a best-effort basis, and attempts to run these
 [processing strategies](../strategies) in the following prioritized order:
 
 - _PPK_, Jason computes a coarse estimate of the rover position using _SPP_ in
@@ -25,7 +25,7 @@ Jason supports the following input formats for to input GNSS observables
 (pseudorange, carrier-phases, ...):
 
 - Rinex 2/3
-- U-blox formats (both single and multiple frequency formats)
+- ublox formats (both single and multiple frequency formats)
 - Data from Rokubun's receivers (Argonaut and Medea, which are Ublox-based, but
   also adding IMU and Event data)
 - [Google's Android GNSS logger](https://github.com/google/gps-measurement-tools/tree/master/GNSSLogger) (smartphone data)
@@ -196,7 +196,7 @@ a comment (starts with `#`) with a description of the fields, which are:
                 treated as a preliminary quality metrics of the solution.
 
 Jason will always delivered the position file corresponding to the SPP
-strategy (files ending with `_spp.csv`). If a more accurate sterategy
+strategy (files ending with `_spp.csv`). If a more accurate strategy
 (PPP or PPK) could be performed, additional CSV will be also delivered,
 ending with either `_ppp.csv` or `_ppk.csv`, to indicate the strategy
 of the solution.
@@ -216,7 +216,7 @@ Example:
 
 #### Position files (kml)
 
-For convenience, the positions are conveted to [KML format](https://developers.google.com/kml/documentation/)
+For convenience, the positions are converted to [KML format](https://developers.google.com/kml/documentation/)
 and included in the ZIP package as well. These files can be easily opened using tools such as
 [Google Earth](http://www.google.com/earth), just double-click on the files
 and the application will open the file.
@@ -244,7 +244,7 @@ are also included in the bundle. These files are:
                  different color coding, depending on the constellation. Also,
                  the satellite ID is also shown at the last point, which is a
                  helper to know the direction to which the satellite moved.
-- `num_satellites.png`: The time series of the number of satellte during the
+- `num_satellites.png`: The time series of the number of satellite during the
                 processing. The same color coding used in the skyplot has been
                 used here. The chart is a stack plot and shows the number of
                 satellites, at each epoch, of each constellation.
@@ -275,7 +275,7 @@ the appropriate units:
 - `GYRX`, `GYRY`, `GYRZ`, 3 components (XYZ) of the gyroscope, expressed in degrees per second
 - `ACCX`, `ACCY`, `ACCZ`, 3 components (XYZ) of the accelerometer, expressed in g's (9.81 m/s^2)
 
-All inertial values are referred to the **body reference fram**. Check the
+All inertial values are referred to the **body reference frame**. Check the
 Argonaut/Medea documentation for further details.
 
 Example of IMU file:
@@ -331,7 +331,7 @@ In your account you will find 3 areas:
 
 In order to use the PaaS API, you will need both the **API key** and
 **your secret user token**. While the API key identifies our PaaS and is common
-accross all users, the secret token is your ID and will link each process you
+across all users, the secret token is your ID and will link each process you
 request with your account.
 
 Once in your area, click on the **Software** tab. In this tab you will find both the API key and

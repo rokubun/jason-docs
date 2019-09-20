@@ -17,7 +17,7 @@ is usually considered less than 30km apart.
 ## Features
 
 - Ease of use
-- Cam envent
+- Cam event
 - Process various formats
 - Automatic base station look-up
 - ...
@@ -28,7 +28,7 @@ The data from the reference stations come from a set of world-wide public provid
 as [International GNSS Service](https://www.igs.org) or [EUREF](http://www.epncb.oma.be/) as
 well as smaller national and regional networks such as the [Institut Cartogràfic i Geològic de Catalunya](https://www.icgc.cat) and the like.
 
-In total, we continously monitor the availability of more than 10000 stations
+In total, we continuously monitor the availability of more than 10000 stations
 distributed worldwide. Some areas are better covered than others but unfortunately
 we cannot provide global coverage.
 

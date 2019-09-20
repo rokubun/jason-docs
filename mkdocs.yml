@@ -12,7 +12,7 @@ theme:
 nav:
   - 'Description': index.md
   - 'Tutorial': 
-    - 'Quickstart': quickstart.md
+    - 'Quick start': quickstart.md
     - 'Manual': manual.md
     - 'Examples': examples.md
     - 'FAQ': faq.md

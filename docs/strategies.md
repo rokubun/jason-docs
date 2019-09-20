@@ -4,7 +4,7 @@ There are multiple strategies to process GNSS raw measurements in order to
 obtain the position. The most common ones are:
 
 - Single Point Positioning (SPP)
-- Precise Point Positionint (PPP)
+- Precise Point Positioning (PPP)
 - Real Time Kinematics (RTK)
 - Post-processing Kinematics (PPK)
 
@@ -23,8 +23,3 @@ of these.
 | PPK      | yes         |    yes          | broadcast       | cm (multi-freq), dm (single-freq)|
 
 - _needs base?_ implies if the technique is a differential technique
-
-## Technique accuracy and error estimates
-
-
-

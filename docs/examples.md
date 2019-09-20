@@ -53,12 +53,12 @@ Then upload the file `bcln0.rinex` to Jason.
 If you own an Argonaut or Medea receiver you are probably wondering how to
 convert the `.rok` files into something else, or how to extract both the
 IMU data as well as the time events (if present in the file). Jason provides,
-free of charge, a conversor that does that.
+free of charge, a converter that does that.
 
 First of all login to the service and head towards the **GNSS converter** 
 (at the top of the page). You should see the following page:
 
-![GNSS conversor for Argonaut data](images/howto_conversor.png "GNSS conversor for Argonaut data")
+![GNSS converter for Argonaut data](images/howto_conversor.png "GNSS converter for Argonaut data")
 
 Once there, simply drag and drop the file you want to process in the `Raw file`
 box and press convert. Once the process is finished press `Download zip` to 
@@ -71,7 +71,7 @@ should see the following files:
 
 Once 
 
-Actually, if you have a receiver that ships a Ublox receiver, not necessarily
+Actually, if you have a receiver that ships a ublox receiver, not necessarily
 our own, you can still use the tool to convert to Rinex file. However we will
 always deny you can do it.
 
