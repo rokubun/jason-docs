@@ -13,6 +13,15 @@ techniques combine GNSS measurements from nearby  **reference stations** with
 those of the rover being positioned to cancel out most of the. By nearby it
 is usually considered less than 30km apart.
 
+
+## Features
+
+- Ease of use
+- Cam envent
+- Process various formats
+- Automatic base station look-up
+- ...
+
 ## Coverage
 
 The data from the reference stations come from a set of world-wide public providers such
@@ -22,3 +31,5 @@ well as smaller national and regional networks such as the [Institut Cartogràfi
 In total, we continously monitor the availability of more than 10000 stations
 distributed worldwide. Some areas are better covered than others but unfortunately
 we cannot provide global coverage.
+
+[![Jason PPK coverage](images/jason_coverage.png "Jason PPK coverage")](https://jason.rokubun.cat/#!/login#coverage)

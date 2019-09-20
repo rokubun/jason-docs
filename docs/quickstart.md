@@ -1,4 +1,4 @@
-# Jason usage
+# Quickstart
 
 ## Single receiver
 

@@ -11,8 +11,17 @@ theme:
   rokubun_url: 'https://jason.rokubun.cat'
 nav:
   - 'Description': index.md
-  - 'Usage': usage.md
-  - 'API': api.md
+  - 'Tutorial': 
+    - 'Quickstart': quickstart.md
+    - 'How it works?': how_works.md
+    - 'User page': user.md
+    - 'API': api.md
+    - 'File formats': file_formats.md
+    - 'Examples': examples.md
+    - 'FAQ': faq.md
+  - 'Processing strategies' : strategies.md
+  - 'Other resources': 'resources.md'
+  - 'Contact us': contact.md
 extra_css:
   - 'stylesheets/extra.css'
 repo_name: 'rokubun/jason-docs'
