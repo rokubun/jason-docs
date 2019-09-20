@@ -11,7 +11,10 @@ The simplest
 
 ## Rover and base files
 
-In this case
+If the area you are surveying does not have a nearby CORS station, you can use
+your own reference GNSS receiver. During the campaign make sure you collect
+data at the same time as your rover and then process the rover GNSS data together
+with the GNSS data from the base station.
 
 ## Rover file with events
 
@@ -63,8 +66,8 @@ fetch the data. Assuming that the you uploaded a file named `<input_file>`, you
 should see the following files:
 
 - `<input_file>.obs`: The Rinex file (version 3.03) with the GNSS raw measurements recorded by the receiver
-- `<input_file>.obs_imu.log`: A columnar file with the IMU data, time tagged in GPS time. See the complete format description in the [format page](../file_formats#argonaut-imu-file).
-- `<input_file>.obs_cam.log`: A columnar file with the event data (e.g. camera event data). See the complete format description in the [format page](../file_formats#argonaut-cam-file).
+- `<input_file>.obs_imu.log`: A columnar file with the IMU data, time tagged in GPS time. See the complete format description in the [format page](../manual#argonaut-imu-file).
+- `<input_file>.obs_cam.log`: A columnar file with the event data (e.g. camera event data). See the complete format description in the [format page](../manual#argonaut-cam-file).
 
 Once 
 

@@ -1,12 +1,40 @@
 # Quickstart
 
-## Single receiver
+This section is intended for the impatients out there (^.^b) that are
+eager to process a file right away. In this guide you will learn:
 
-The most basic usage is using data from a single GNSS receiver
+- How to use Jason to perform a [PPK](../strategies) process using a single
+  GNSS binary file obtained from a Ublox receiver.
+- View and download results file
 
-## Using a base station
+This example is the most simple processing case, which turns to be also
+the most common processing type performed by our users. You will not need
+any base station for this tutorial, just following these steps:
 
-If the area you are surveying does not have a nearby CORS station, you can use
-your own reference GNSS receiver. During the campaign make sure you collect
-data at the same time as your rover and then process the rover GNSS data together
-with the GNSS data from the base station.
+1. Go to the [Jason web page](https://jason.rokubun.cat) and **register**. You will
+  need to specify an e-mail and a password. Once you click "Sign up" you should
+  be receiving an e-mail with a verification link.
+2. [Download the test file](https://github.com/rokubun/jason-docs/blob/master/assets/argonaut_cam.rok?raw=true). 
+  This file has been taken with an [Argonaut GNSS receiver](https://www.rokubun.cat/gnss-receiver/)
+  and contains, besides GNSS raw measurements, IMU data and camera events.
+3. **Log-in** with your credentials into Jason and go to "GNSS Processor"
+  (should be the default page after logging in).
+4. Drag'n'drop the downloaded file into the "Rover GNSS data file" box. Alternatively,
+  you can click the box "Select file" and a file explorer window will pop-up.
+![Select file](images/quickstart_upload.png "Select file")
+5. Press **"Process file"**, it will be uploaded and the processing will start,
+   the front-end will issue several progress logs to inform about the strategy
+   used and status.
+![Process file](images/jason_progress.png "Process file")
+6. Click **"View Results"** to access the results page. The result page contains
+   a map window to show a preview of the results. The map contains both the
+   track in SPP and PPP/PPK (if the service could use this processing strategy)
+   and also all the camera events (if present in the input file) represented
+   as red crosses. The result page contains also 3 images with the satellite
+   view, number of satellites as well as height profile (above WGS84 ellipsoid).
+   Note that for static positioning, only one point will be plot in the map,
+   and thus no height profile will be shown.
+![View Results](images/jason_results.png "View Results")
+7. You can access the log messages if you click the **"View Log"** box at the top
+   of the page and **"Download results"** as a ZIP format. The contents of the
+   file are described in the [file format section of this documentation](../manual#result-files).

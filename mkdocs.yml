@@ -13,10 +13,7 @@ nav:
   - 'Description': index.md
   - 'Tutorial': 
     - 'Quickstart': quickstart.md
-    - 'How it works?': how_works.md
-    - 'User page': user.md
-    - 'API': api.md
-    - 'File formats': file_formats.md
+    - 'Manual': manual.md
     - 'Examples': examples.md
     - 'FAQ': faq.md
   - 'Processing strategies' : strategies.md
