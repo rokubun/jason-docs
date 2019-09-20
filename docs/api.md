@@ -13,7 +13,7 @@ photogrammetry processing software, for example.
 
 Let' assume you have a GNSS data file in RINEX format named `GARR2150.15o` that
 you wish to process. Let's also assume you have your API key and secret token
-ready (check below for the steps to obtain them):
+ready ([fetch them in your user section](../user#how-to-obtain-your-api-key)):
 
 ```bash
 export APIKEY="jason_api_key_here"
@@ -132,22 +132,3 @@ urllib.request.urlretrieve(url)
 The zip file contains a Google Earth's KML file, the results file and different
 figures with the quality metrics. You have a description of each file in the
 README file included in the ZIP file.
-
-## How to obtain your API key
-
-In order to use the PaaS API, you will need both the **API key** and
-**your secret user token**. While the API key identifies our PaaS and is common
-accross all users, the secret token is your ID and will link each process you
-request with your account.
-
-In order to fetch both codes, you will need to first login into the PaaS via our
-frontend (http://jason.rokubun.cat).
-
-![Jason main page](images/01_main_page.png "Jason main page")
-
-Click on **Account**, in your user area, which can be accessed if you hover over
-your e-mail address, at the top right corner of the page. Once in your area,
-click on the **Software** tab. In this tab you will find both the API key and
-secret token that you need.
-
-![User software page](images/02_account_software.png "Software page to fetch the user token")
