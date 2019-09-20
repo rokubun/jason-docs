@@ -9,26 +9,27 @@ eager to process a file right away. In this guide you will learn:
 
 This example is the most simple processing case, which turns to be also
 the most common processing type performed by our users. You will not need
-any base station for this tutorial, just following these steps:
+any base station for this tutorial, just follow these steps:
 
 1. Go to the [Jason web page](https://jason.rokubun.cat) and **register**. You will
-  need to specify an e-mail and a password. Once you click "Sign up" you should
-  be receiving an e-mail with a verification link.
-2. [Download the test file](https://github.com/rokubun/jason-docs/blob/master/assets/argonaut_cam.rok?raw=true). 
-  This file has been taken with an [Argonaut GNSS receiver](https://www.rokubun.cat/gnss-receiver/)
+  need to specify an e-mail and a password. Once you click "Sign up", you should
+  receive an e-mail with a verification link.
+2. [Download the test file](https://github.com/rokubun/jason-docs/blob/master/assets/argonaut_cam.rok?raw=true), which has been taken with an
+   [Argonaut GNSS receiver](https://www.rokubun.cat/gnss-receiver/)
   and contains, besides GNSS raw measurements, IMU data and camera events.
-3. **Log-in** with your credentials into Jason and go to "GNSS Processor"
+3. **Log in** with your credentials into Jason and go to "GNSS Processor"
   (should be the default page after logging in).
-4. Drag'n'drop the downloaded file into the "Rover GNSS data file" box. Alternatively,
+4. Drag-and-drop the downloaded file into the "Rover GNSS data file" box. Alternatively,
   you can click the box "Select file" and a file explorer window will pop-up.
 ![Select file](images/quickstart_upload.png "Select file")
-5. Press **"Process file"**, it will be uploaded and the processing will start,
+5. Press **"Process file"**. The file will be uploaded and the processing will start,
    the front-end will issue several progress logs to inform about the strategy
-   used and status.
+   used and status. When the process is Finished, a button will appear at the 
+   bottom of the page.
 ![Process file](images/jason_progress.png "Process file")
-6. Click **"View Results"** to access the results page. The result page contains
+6. Click **"View Results"** to access the results page, which contains
    a map window to show a preview of the results. The map contains both the
-   track in SPP and PPP/PPK (if the service could use this processing strategy)
+   track in SPP and PPP/PPK (if the service could apply one of these processing strategies)
    and also all the camera events (if present in the input file) represented
    as red crosses. The result page contains also 3 images with the satellite
    view, number of satellites as well as height profile (above WGS84 ellipsoid).

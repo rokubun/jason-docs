@@ -1,4 +1,4 @@
-# Welcome to Jason PaaS docs
+# Welcome to Jason documentation
 
 Jason is Rokubun's Positioning-as-a-Service (PaaS), a cloud service that compute
 the position of a receiver using the raw GNSS measurements.
@@ -28,6 +28,8 @@ for your data.
 - Jason offers an Application Programming Interface (**API**) to automate your
   GNSS data processing workflow. You can include it in your application pipeline
   without the need to go through the front-end.
+- **Data conversion service** for Argonaut/Medea owners: generate Rinex file, IMU
+  data and time trigger (cam) events from a binary file logged by the receiver.
 
 ## Coverage
 
