@@ -1,13 +1,13 @@
 # Usage examples
 
 This section includes several usage examples that cover most of the use cases
-that Jason could support.
+that Jason could support. Go to the [quick start guide](../quickstart) for an example of
+a basic usage with a single rover file.
 
-## Rover file
-
-Input rover file in Rinex 3.03 format. base will be looked for automatically
-
-The simplest 
+This section will use the term _rover_ instead of _receiver_ in order to
+distinguish it from a _reference receiver_ (or _base receiver_), which is
+usually static and is used to provide corrections to the (usually) moving
+(roving) receiver.
 
 ## Rover and base files
 
@@ -16,10 +16,26 @@ your own reference GNSS receiver. During the campaign make sure you collect
 data at the same time as your rover and then process the rover GNSS data together
 with the GNSS data from the base station.
 
-## Rover file with events
+To execute this example, follow these steps:
 
-Argonaut receiver contains time events. 
+1. Download the [sample rover](https://github.com/rokubun/jason-docs/blob/master/assets/argonaut_cam.rok?raw=true) and [base station]((https://github.com/rokubun/jason-docs/blob/master/assets/PLAN00ESP_R_20180580000_01D_30S_MO.obs?raw=true)) files.
+2. Log in with your account and Jason and go to the "GNSS processor" tab.
+3. Drag-and-drop the two downloaded files at the _rover_ and _base station_ boxes,
+as shown below.
+![Upload rover and base station files](images/example_base_upload.png "Upload rover and base station files")
+4. Press "Process file" and wait for the process to finish. The rest of the steps
+are the same as those of the [quick start guide](../quickstart).
 
+An important note to consider is regarding the **base station coordinates**. If the
+input file is in Rinex format and you are confident that the coordinates of the
+`APPROX POSITION XYZ` header field are accurate, you do not need to do anything else. However,
+you can indicate a proper set of coordinates for the base station in the field
+**"External base station position (optional)"** in the form of latitude, longitude
+and height. Latitude and longitude shall be expressed in meters while the height
+should be expressed in height above the WGS84 ellipsoid.
+
+Also note that the formats supported by the base station are the same as the 
+ones supported by the rover receiver.
 
 ## Static receiver, RTCM 3 format
 
@@ -69,16 +85,6 @@ should see the following files:
 - `<input_file>.obs_imu.log`: A columnar file with the IMU data, time tagged in GPS time. See the complete format description in the [format page](../manual#argonaut-imu-file).
 - `<input_file>.obs_cam.log`: A columnar file with the event data (e.g. camera event data). See the complete format description in the [format page](../manual#argonaut-cam-file).
 
-Once 
-
 Actually, if you have a receiver that ships a ublox receiver, not necessarily
 our own, you can still use the tool to convert to Rinex file. However we will
-always deny you can do it.
-
-### Usage of external tools
-
-Because 
-
-If you use Docker, feel free to use our dockerized container with a bundle of
-GNSS processing tools.
-
+always deny you can do it ;P
