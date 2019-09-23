@@ -15,10 +15,10 @@ nav:
     - 'Quick start': quickstart.md
     - 'Manual': manual.md
     - 'Examples': examples.md
-    - 'FAQ': faq.md
   - 'GNSS converter': converter.md
   - 'Processing strategies' : strategies.md
   - 'Other resources': 'resources.md'
+  - 'FAQ': faq.md
   - 'Contact us': contact.md
 extra_css:
   - 'stylesheets/extra.css'
