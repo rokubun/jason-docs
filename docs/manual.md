@@ -254,7 +254,7 @@ camera trigger), the output package will also contain a camera event file
 `camera_events.csv`. The file contains as many rows as time triggers (camera
 events) detected in the input file. Each row of the file contains the time tag,
 position and formal error of the camera event, with the same format as 
-described above for the CSV files.
+described above for the Position CSV files.
 
 ### GNSS converter files
 
