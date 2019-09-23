@@ -31,7 +31,9 @@ extra:
       link: 'https://twitter.com/rokubn'
     - type: 'linkedin'
       link: 'https://www.linkedin.com/company/rokubun/'
-
+markdown_extensions:
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
 google_analytics:
   - 'UA-148380836-1'
   - 'auto'

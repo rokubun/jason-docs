@@ -1,6 +1,6 @@
 # Quick start guide
 
-This section is intended for those who cannot wait out there (^.^b) that are
+This section is intended for those who cannot wait out there :smile: , that are
 eager to process a file right away. In this guide you will learn:
 
 - How to use Jason to perform a [PPK](../strategies) process using a single
