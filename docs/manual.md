@@ -266,7 +266,7 @@ IMU observables and detected events if any (Time/CAM events
 
 #### Argonaut GNSS file
 
-
+Rokubun's Argonaut/Medea receivers store GNSS in Ublox format. The output of the GNSS converter in terms of GNSS measurements data will be the equivalent RINEX 3.03 file.
 
 #### Argonaut IMU file
 
