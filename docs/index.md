@@ -25,7 +25,7 @@ for your data.
 - Differential positioning for greater accuracy without the need to deploy a
   base station, Jason will **automatically search/fetch/use the closest base station** among
   the database of more than 10000 stations tracked by our servers
-- Jason offers an Application Programming Interface (**API**) to automate your
+- Application Programming Interface (**API**) to automate your
   GNSS data processing workflow. You can include it in your application pipeline
   without the need to go through the front-end.
 - **Data conversion service** for Argonaut/Medea owners: generate Rinex file, IMU
