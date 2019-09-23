@@ -3,7 +3,7 @@
 ## Processing engine
 
 Under the hood, Jason runs the open-source package
-[rtklib](http://wwww.rtklib.com) as the positioning engine. This service works
+[rtklib](http://wwww.rtklib.com) as the positioning engine, whilst Rokubun positioning engine is getting ready for deployment. This service works
 on a best-effort basis, and attempts to run these
 [processing strategies](../strategies) in the following prioritized order:
 
