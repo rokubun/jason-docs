@@ -259,10 +259,11 @@ described above for the Position CSV files.
 ### GNSS converter files
 
 Within the Jason service, there is the GNSS Converter service specially devoted to Argonaut/Medea 
-owners that wish to transform acquired data in binary format into standard formats for GNSS observables, 
-IMU observables and detected events if any (Time/CAM events
+owners who wish to transform acquired data in binary format into standard formats for GNSS observables, 
+IMU observables and detected events if any. See more details in [Examples](/examples/#argonautmedea-file-conversion) section.
 
-![GNSS converter](images/jason_gnss_converter.png "GNSS converter")
+
+![GNSS converter](images/howto_conversor.png "GNSS converter")
 
 #### Argonaut GNSS file
 
