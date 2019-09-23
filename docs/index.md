@@ -62,7 +62,7 @@ a data campaign where GNSS raw measurements can be logged for later processing),
 but outside the coverage of Jason. In this case the operator provides her own
 base station that is active during the campaign, also logging GNSS raw measurements.
 
-This data is then uploaded in the service, as describe in this [example](../examples#rover-and-base-files).
+This data is then uploaded in the service, as describe in this [example](examples#rover-and-base-files).
 
 ![End-to-end PPK](images/use_case_rover_base_ppk.png "End-to-end PPK")
 
