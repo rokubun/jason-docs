@@ -42,7 +42,7 @@ provides an Application Programming Interface (API) that allows to automate
 the complete processing or to include the positioning estimation step in your
 application pipeline (for example automated photogrammetry software).
 
-Im fact, Jason is fully implemented as an API and the front-end simply uses
+In fact, Jason is fully implemented as an API and the front-end simply uses
 it. The API allows that you to e.g. program tasks in Jason using URLs via
 the command line of your Operating System or create plugins.
 
