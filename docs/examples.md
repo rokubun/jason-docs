@@ -42,7 +42,7 @@ ones supported by the rover receiver.
 The use case for this example is in the event that you deploy a base station
 so that it transmits the data via NTRIP to an NTRIP caster. Rover receivers
 can then connect to this caster but need the precise coordinates of this base
-station.
+station, so you use Jason to get those precise coordinates.
 
 Once the base station is serving data to the NTRIP caster, the operator can
 record data into `rtcm3` format using e.g. [rtklib](http://www.rtklib.com)'s `str2str` tool.
@@ -63,6 +63,8 @@ convbin -r rtcm3 -v 3.03 -f 3 -scan -o bcln0.rinex bcln0.rtcm3
 ```
 
 Then upload the file `bcln0.rinex` to Jason.
+
+You will get this station precise coordinates that can be further used by rovers using this station in the NTRIP caster.
 
 ## Argonaut/Medea file conversion
 
