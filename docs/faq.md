@@ -2,7 +2,7 @@
 
 !!! note "Do you have a question not listed here? [Drop us a line!](mailto:info@rokubun.cat?subject=[Jason doc] faq request)"
 
-??? question "How accurate is the solution I've got with Jason?"
+???+ question "How accurate is the solution I've got with Jason?"
     You can find the error estimate in the error columns of the [position files
     delivered within the ZIP bundle](../manual#position-files-csv).
 
