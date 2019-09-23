@@ -267,7 +267,34 @@ IMU observables and detected events if any. See more details in [Examples](/exam
 
 #### Argonaut GNSS file
 
-Rokubun's Argonaut/Medea receivers store GNSS in Ublox format. The output of the GNSS converter in terms of GNSS measurements data will be the equivalent RINEX 3.03 file.
+Rokubun's Argonaut/Medea receivers store GNSS in Ublox format. The output of the GNSS converter in terms of GNSS measurements data will be the equivalent RINEX 3.03 file as follows:
+
+
+```csv
+     3.03           OBSERVATION DATA    M (MIXED)           RINEX VERSION / TYPE
+Rokubun core        rokubun             2019-08-12 15:43:35 PGM / RUN BY / DATE
+UNKN                                                        MARKER NAME
+unknown             unknown                                 OBSERVER / AGENCY
+unknown             unknown             unknown             REC # / TYPE / VERS
+unknown             unknown                                 ANT # / TYPE
+        0.0000        0.0000        0.0000                  APPROX POSITION XYZ
+        0.0000        0.0000        0.0000                  ANTENNA: DELTA H/E/N
+  2019    06    05    01    52   03.7652649                 TIME OF FIRST OBS
+G    4 C1C L1C D1C S1C                                      SYS / # / OBS TYPES
+R    4 C1C L1C D1C S1C                                      SYS / # / OBS TYPES
+E    4 C1C L1C D1C S1C                                      SYS / # / OBS TYPES
+                                                            END OF HEADER
+> 2019 06 05 01 52 20.2019999  0  6
+G05  21643026.31606 113734869.95806     -2084.85906        40.00006
+G13  20940404.71107 110042563.43007       650.48707        45.00007
+G15  21819537.83307 114662444.00207      2552.08207        46.00007
+G29  22272808.61807 117044397.73607     -2139.16707        45.00007
+G30  24262711.51305 127501402.06305      -245.06005        34.00005
+E13  24476988.50208 128627441.38908       970.55808        49.00008
+
+
+```
+
 
 #### Argonaut IMU file
 
