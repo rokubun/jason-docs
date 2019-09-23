@@ -258,6 +258,9 @@ described above for the Position CSV files.
 
 ### GNSS converter files
 
+Within the Jason service, there is the GNSS Converter service specially devoted to Argonaut/Medea owners that wish to transform acquired data in binary format into standard formats for GNSS observables, IMU observables and detected events if any (Time/CAM events
+
+
 #### Argonaut IMU file
 
 Rokubun's Argonaut/Medea receivers store GNSS data as well as IMU data from its
