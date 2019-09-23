@@ -13,7 +13,7 @@ those of the rover being positioned to cancel out most of the common errors
 can be achieved.
 
 Do not have a reference station? **Worry not!** we have you covered, Jason will
-automatically look for a suitable reference station, among the ones regularly
+automatically look for a suitable reference station (CORS), among the ones regularly
 monitored by the service, and use it to try to achieve the best possible accuracy
 for your data.
 
