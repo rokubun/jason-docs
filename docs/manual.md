@@ -13,7 +13,7 @@ on a best-effort basis, and attempts to run these
   [stations continuously monitored by Jason](https://jason.rokubun.cat/#!/login#coverage).
   If a nearby station is found (less than a certain baseline),
   then the corresponding RINEX data is downloaded in order to perform differential
-  positioning.
+  positioning. Alike, if you provide Jason with a base station measurements file, it will undergo _PPK_ technique processing.
 - _PPP_, if no reference data is found, Jason will attempt PPP if the precise
   orbits and clocks for the day to be processed are found and the input data
   is multi-frequency.
