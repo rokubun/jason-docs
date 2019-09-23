@@ -11,11 +11,12 @@ theme:
   rokubun_url: 'https://jason.rokubun.cat'
 nav:
   - 'Description': index.md
-  - 'Tutorial': 
+  - 'GNSS processor': 
     - 'Quick start': quickstart.md
     - 'Manual': manual.md
     - 'Examples': examples.md
     - 'FAQ': faq.md
+  - 'GNSS converter': converter.md
   - 'Processing strategies' : strategies.md
   - 'Other resources': 'resources.md'
   - 'Contact us': contact.md
