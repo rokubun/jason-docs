@@ -31,6 +31,42 @@ for your data.
 - **Data conversion service** for Argonaut/Medea owners: generate Rinex file, IMU
   data and time trigger (cam) events from a binary file logged by the receiver.
 
+## Use cases
+
+Jason aims at providing a platform of various potential services and use cases
+that share the same common need: accurate navigation. Examples of such services
+and applications follow:
+
+### Photogrammetry
+
+Jason was created with the photogrammetry workflow in mind: a drone logs both
+raw GNSS data as well as triggers several photographs, whose time tags are
+also logged by the receiver (Argonaut supports that as well as the NEO-M8T and
+ZED-F9P chipsets from ublox). The operator does not worry about base station
+because he made sure that the campaign area is under Jason coverage.
+
+Once the campaign is over, the operator uploads the data to our service, which
+will automatically find the closest base station available and compute both
+the navigation solution (ideally using PPK) as well as georeference any time
+(camera) event present in the input file. This data can be later used in 
+further steps of the processing.
+
+![PPK Photogrammetry](images/use_case_rover_ppk.png "PPK Photogrammetry")
+
+This use case is the one covered in the [quick start](../quickstart) of the manual
+
+### End-to-end PPK
+
+This use case is similar to the previous case (an operator that performs 
+a data campaign where GNSS raw measurements can be logged for later processing),
+but outside the coverage of Jason. In this case the operator provides her own
+base station that is active during the campaign, also logging GNSS raw measurements.
+
+This data is then uploaded in the service, as describe in this [example](../examples#rover-and-base-files).
+
+![End-to-end PPK](images/use_case_rover_base_ppk.png "End-to-end PPK")
+
+
 ## Coverage
 
 The data from the reference stations come from a set of world-wide public providers such
