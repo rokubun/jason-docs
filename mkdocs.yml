@@ -31,3 +31,7 @@ extra:
       link: 'https://twitter.com/rokubn'
     - type: 'linkedin'
       link: 'https://www.linkedin.com/company/rokubun/'
+
+google_analytics:
+  - 'UA-148380836-1'
+  - 'auto'
