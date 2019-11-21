@@ -30,4 +30,5 @@ in case you want to try them out:
 - NRCan's [PPP service](https://webapp.geod.nrcan.gc.ca/geod/tools-outils/ppp.php)
 - Geoscience Australia [positioning service](http://www.ga.gov.au/bin/gps.pl)
 - GMV's [magicGNSS service](https://magicgnss.gmv.com/)
+- Trimble [CenterPoint RTX Post-processing service](https://www.trimblertx.com/UploadForm.aspx)
 
