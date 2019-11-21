@@ -26,6 +26,7 @@ nav:
     - 'Quick start': quickstart.md
     - 'Manual': manual.md
     - 'Examples': examples.md
+    - 'Accuracy': accuracy.md
   - 'GNSS converter': converter.md
   - 'Processing strategies' : strategies.md
   - 'Other resources': 'resources.md'
