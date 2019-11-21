@@ -33,15 +33,20 @@ main characteristics:
 |Reference station | IGN BCLN (16km baseline) |
 
 In order to assess the results, the same data file (converter to Rinex) has been
-processed using [JPL APPS online Precise Post Processing](http://apps.gdgps.net/) (PPP) tool. The differences are shown in the table below:
+processed using [JPL APPS online Precise Post Processing](http://apps.gdgps.net/) (PPP) 
+tool. The differences are shown in the table below:
 
-|component| JPL APPS (ultra-rapid products) | Jason PPK | difference |
+|component| JPL APPS (ultra-rapid products) | Jason PPK | difference (vs JPL)|
 |:---:|:---:|:----:|:----:|
-| x       |    4787691.861    |   4787692.106 |     0.245 |
-| y       |    183434.826     |    183434.274 |    -0.552 |
-| z       |    4196130.151    |   4196129.589 |    -0.562 |
+| x       |    4787691.861     | 4787692.106 |     0.245 |
+| y       |    183434.826      |  183434.274 |    -0.552 |
+| z       |    4196130.151     | 4196129.589 |    -0.562 |
 
 The **East/North/Up** difference between the two is -0.561 / -0.569 / -0.204 respectively.
+
+**Note**: PPP results (JPL and NRCan) were performed with
+ultra-rapid orbits (in the case of JPL) and also the data take was very short
+(2h), which in the case of PPP can be a drawback in terms of convergence time.
 
 ## Smartphone (non-moving dynamic)
 
