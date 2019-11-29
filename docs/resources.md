@@ -21,6 +21,7 @@ There is a list of external links and references you might find handy:
 - UPC's [gAGE Course on GNSS data processing](https://gage.upc.edu/forum/gnss-books/)
 - GPS service daemon software [gpsd](https://gpsd.gitlab.io/gpsd/index.html)
 - [RTKlib](http://rtklib.com/), an open-source GNSS data processing software
+- UNAVCO's [teqc](https://www.unavco.org/software/data-processing/teqc/teqc.html#executables) Rinex pre-processing tool
 
 We'd rather have you using our service to compute position, but should you
 want to explore other services, here there is a list of them, that perform PPP,

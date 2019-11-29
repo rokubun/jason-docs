@@ -106,3 +106,42 @@ Example of CAM (time event) file:
 1990  211377.81912194
 1990  211380.62477889
 ```
+
+## Third party options
+
+If you'd rather convert the files yourself without using our platform, you just
+have to know that any tool that is able to parse ublox binary format (`ubx`) will
+convert your files into Rinex format. Two examples are UNAVCO's `teqc` and RTKLIB's
+`convbin` (or its Windows GUI equivalent `rtkconv`). 
+
+The [resource section](resources.md#external-links) of
+this documentation contains links on how to obtain them.
+Note however, that you will have to download these tools yourself or, if you
+are familiar with Docker, we compiled an image ([rokubun/gnss_tools](https://hub.docker.com/r/rokubun/gnss_tools)) with these tools included (and much more).
+
+For the examples given in the following sections, you will need the sample `rok` file [argonaut_cam.rok](https://github.com/rokubun/jason-docs/raw/master/assets/argonaut_cam.rok).
+
+### teqc
+
+To convert the `rok` file into Rinex 2 (adding some header fields), use the
+following command:
+
+```bash
+marker_name="ARGO"
+rx_type="argonaut"
+ant_type="internal/patch"
+teqc  -ublox ubx -O.rt ${rx_type} -O.at ${ant_type} -O.mo ${marker_name} argonaut_cam.rok > argo0580.18o
+```
+
+### convbin
+
+If you'r rather use `convbin`, please use this command (to output the data in
+Rinex 3.03 format):
+
+```bash
+marker_name="ARGO"
+rx_number="03018-1-0xxx"
+rx_type="argonaut"
+ant_type="internal/patch"
+convbin -v 3.03 -od -os -r ubx -o  argo0580.18o -hr "${rx_number}/${rx_type}/" -ha "/${ant_type}" -hm ${marker_name} argonaut_cam.rok
+```
