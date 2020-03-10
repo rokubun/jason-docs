@@ -15,9 +15,9 @@ box and press convert. Once the process is finished, press `Download zip` to
 fetch the data. Assuming that the you uploaded a file named `<input_file>`, you
 should see the following files:
 
-- `<input_file>.obs`: The Rinex file (version 3.03) with the GNSS raw measurements recorded by the receiver
-- `<input_file>.obs_imu.log`: A columnar file with the IMU data, time tagged in GPS time. See the complete format description [here](#argonaut-imu-file).
-- `<input_file>.obs_cam.log`: A columnar file with the event data (e.g. camera event data). See the complete format description [here](#argonaut-cam-file).
+- `<input_file>.rnx`: The Rinex file (version 3.03) with the GNSS raw measurements recorded by the receiver
+- `<input_file>.rnx_imu.csv`: A columnar file with the IMU data, time tagged in GPS time. See the complete format description [here](#argonaut-imu-file).
+- `<input_file>.rnx_cam.csv`: A columnar file with the event data (e.g. camera event data). See the complete format description [here](#argonaut-cam-file).
 
 Actually, if you have a receiver that ships a ublox receiver, not necessarily
 our own, you can still use the tool to convert to Rinex file. However we will
@@ -63,11 +63,11 @@ tool from Jason, a CSV file with the IMU data will be generated. The file starts
 with a comment line (starting with `#`) that describes each column as well as
 the appropriate units:
 
-- `GPSWEEK` The GPS week of the time stamp
-- `GPSTOW` The seconds of the GPS week
-- `MAGX`, `MAGY`, `MAGZ`, 3 components (XYZ) of the magnetometer, expressed in nano-Teslas
-- `GYRX`, `GYRY`, `GYRZ`, 3 components (XYZ) of the gyroscope, expressed in degrees per second
-- `ACCX`, `ACCY`, `ACCZ`, 3 components (XYZ) of the accelerometer, expressed in g's (9.81 m/s^2)
+- `gps_week` The GPS week of the time stamp
+- `gps_tow` The seconds of the GPS week
+- `mag_x`, `mag_y`, `mag_z`, 3 components (XYZ) of the magnetometer, expressed in micro-Teslas
+- `gyro_x`, `gyro_y`, `gyro_z`, 3 components (XYZ) of the gyroscope, expressed in degrees per second
+- `accel_x`, `accel_y`, `accel_z`, 3 components (XYZ) of the accelerometer, expressed in g's (9.81 m/s^2)
 
 All inertial values are referred to the **body reference frame**. Check the
 Argonaut/Medea documentation for further details.
@@ -75,10 +75,19 @@ Argonaut/Medea documentation for further details.
 Example of IMU file:
 
 ```csv
-#GPSWEEK GPSTOW MAGX(uT) MAGY(uT) MAGZ(uT) GYRX(º/s) GYRY(º/s) GYR(º/s) ACCX(g) ACCY(g) ACCZ(g)
-1990  210938.42492403     -8.400    56.550   -33.600    -2.305    -0.580     0.641    -0.007     0.053    -0.983
-1990  210938.43499108     -9.000    55.800   -31.200    -2.290    -0.641     0.626    -0.015     0.060    -0.980
-1990  210938.44496808     -7.650    53.700   -33.150    -2.275    -0.702     0.626    -0.010     0.053    -0.985
+# Imu,gps_week,gps_tow[seconds],mag_x[uT],mag_y[uT],mag_z[uT],gyro_x[deg/s],giro_y[deg/s],giro_z[deg/s],accel_x[g],accel_y[g],accel_z[g]
+Imu,1990,210938.388921000,-8.400,56.550,-33.600,-2.305,-0.580,0.641,-0.007,0.053,-0.983
+Imu,1990,210938.398899000,-9.000,55.800,-31.200,-2.290,-0.641,0.626,-0.015,0.060,-0.980
+Imu,1990,210938.408876000,-7.650,53.700,-33.150,-2.275,-0.702,0.626,-0.010,0.053,-0.985
+Imu,1990,210938.518632000,-9.750,56.250,-32.250,-2.275,-0.565,0.626,-0.008,0.054,-0.981
+Imu,1990,210938.528610000,-9.000,55.800,-33.900,-2.290,-0.504,0.626,-0.007,0.059,-0.979
+Imu,1990,210938.538588000,-10.500,55.200,-34.200,-2.275,-0.458,0.641,-0.008,0.057,-0.987
+Imu,1990,210938.548566000,-9.000,56.250,-33.600,-2.275,-0.458,0.641,-0.015,0.057,-0.980
+Imu,1990,210938.558543000,-7.650,56.250,-33.600,-2.275,-0.473,0.626,-0.013,0.058,-0.988
+Imu,1990,210938.593055000,-9.300,55.950,-33.000,-2.305,-0.489,0.641,-0.015,0.059,-0.979
+Imu,1990,210938.603033000,-8.550,54.900,-33.450,-2.290,-0.489,0.626,-0.016,0.056,-0.978
+Imu,1990,210938.613011000,-9.000,56.850,-33.150,-2.305,-0.550,0.626,-0.012,0.056,-0.982
+Imu,1990,210938.622988000,-10.200,55.200,-32.850,-2.305,-0.580,0.626,-0.012,0.059,-0.984
 ```
 
 ### Argonaut CAM file
@@ -98,13 +107,16 @@ If no cam events have been detected, no file will be generated.
 Example of CAM (time event) file:
 
 ```csv
-1990  211188.79867494
-1990  211193.86766694
-1990  211198.69297889
-1990  211201.69084889
-1990  211374.67710689
-1990  211377.81912194
-1990  211380.62477889
+# Event,gps_week,gps_tow[seconds]
+Event,1990,211188.789716000
+Event,1990,211193.854405000
+Event,1990,211198.683787000
+Event,1990,211201.679891000
+Event,1990,211374.665552000
+Event,1990,211377.808189000
+Event,1990,211380.612900000
+Event,1990,211383.346676000
+Event,1990,211385.930332000
 ```
 
 ## Third party options
