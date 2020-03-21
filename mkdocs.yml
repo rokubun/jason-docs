@@ -47,6 +47,8 @@ extra:
 markdown_extensions:
   - admonition
   - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
 
 google_analytics:
   - 'UA-148380836-1'
