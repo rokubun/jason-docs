@@ -165,6 +165,30 @@ url = res["results"][-1]["url"]
 urllib.request.urlretrieve(url)
 ```
 
+### Using the API with Python requests
+
+If you need to integrate API calls within Python instead of bash (with curl commands), you can use the `requests` library. The following example illustrates how to send a file to process in Jason:
+
+```python
+import requests
+
+file = 'gnss_file_to_process.txt'
+url='http://api-argonaut.rokubun.cat/api/processes'
+
+headers = {
+    'accept': 'application/json',
+    'ApiKey': APIKEY,
+}
+
+files = {
+    'type' : (None, "GNSS"),
+    'token' : (None, SECRET_TOKEN),
+    'rover_file': (file, open(file, 'rb'))
+}
+
+r = requests.post(url, headers=headers, files=files)
+```
+
 ## Result files
 
 This section include the information of the various file formats delivered by
