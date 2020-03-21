@@ -52,20 +52,41 @@ Let' assume you have a GNSS data file in RINEX format named `GARR2150.15o` that
 you wish to process. Let's also assume you have your API key and secret token
 ready ([fetch them in your user section](#how-to-obtain-your-api-key)):
 
-``` bash
+``` bash tab="Bash"
 export APIKEY="jason_api_key_here"
 export SECRET_TOKEN="your_secret_token_here"
-```
 
-With this information you can fire a process with a `curl` command, like so:
+file="GARR2150.15o"
+url="http://api-argonaut.rokubun.cat/api/processes/"
 
-```bash
 curl -X POST  -H "accept: application/json" \
                        -H "Content-Type: multipart/form-data" \
                        -H "ApiKey: ${APIKEY}"  \
                        -F  token=${SECRET_TOKEN} -F type=GNSS  \
-                       -F "rover_file=@GARR2150.15o"  \
-                                "http://api-argonaut.rokubun.cat/api/processes/"
+                       -F "rover_file=@s${file}" ${url}
+```
+
+```py3 tab="Python"
+import requests
+
+APIKEY="jason_api_key_here"
+SECRET_TOKEN="your_secret_token_here"
+
+file = 'GARR2150.15o'
+url='http://api-argonaut.rokubun.cat/api/processes'
+
+headers = {
+    'accept': 'application/json',
+    'ApiKey': APIKEY,
+}
+
+files = {
+    'type' : (None, "GNSS"),
+    'token' : (None, SECRET_TOKEN),
+    'rover_file': (file, open(file, 'rb'))
+}
+
+r = requests.post(url, headers=headers, files=files)
 ```
 
 Now the process is being run in Rokubun's servers. The previous command replies
@@ -81,10 +102,28 @@ You can check the status of the process at any time under the tab **My processes
 in your user area of the front-end or, alternatively with this curl command
 (that will answer with a JSON string):
 
-```bash
+```bash tab="Bash"
+
+process_id="707"
+url="http://api-argonaut.rokubun.cat/api/processes/${process_id}"
+
 curl -X GET -H "ApiKey: ${APIKEY}" \
-                     -H "accept: application/json"  \
-                     "http://api-argonaut.rokubun.cat/api/processes/707?token=${SECRET_TOKEN}"
+                     -H "accept: application/json" "${url}?token=${SECRET_TOKEN}"
+```
+
+```py3 tab="Python"
+import requests
+
+process_id=3145
+
+url='http://api-argonaut.rokubun.cat/api/processes/{}'.format(process_id)
+
+headers = {
+    'accept': 'application/json',
+    'ApiKey': APIKEY
+}
+
+r = requests.get(url, headers=headers, params={ 'token' : token })
 ```
 
 The JSON string will give details on the run as well as any log messages that
@@ -154,7 +193,7 @@ for that to work)
 
 You can also use Python to automate this and download the results file (`results.zip`):
 
-```py3
+``` py3 tab="Python"
 import json
 import urllib.request
 
@@ -165,29 +204,6 @@ url = res["results"][-1]["url"]
 urllib.request.urlretrieve(url)
 ```
 
-### Using the API with Python requests
-
-If you need to integrate API calls within Python instead of bash (with curl commands), you can use the `requests` library. The following example illustrates how to send a file to process in Jason:
-
-```py3
-import requests
-
-file = 'gnss_file_to_process.txt'
-url='http://api-argonaut.rokubun.cat/api/processes'
-
-headers = {
-    'accept': 'application/json',
-    'ApiKey': APIKEY,
-}
-
-files = {
-    'type' : (None, "GNSS"),
-    'token' : (None, SECRET_TOKEN),
-    'rover_file': (file, open(file, 'rb'))
-}
-
-r = requests.post(url, headers=headers, files=files)
-```
 
 ## Result files
 
