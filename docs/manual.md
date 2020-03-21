@@ -123,7 +123,7 @@ headers = {
     'ApiKey': APIKEY
 }
 
-r = requests.get(url, headers=headers, params={ 'token' : token })
+r = requests.get(url, headers=headers, params={ 'token' : SECRET_TOKEN })
 ```
 
 The JSON string will give details on the run as well as any log messages that
