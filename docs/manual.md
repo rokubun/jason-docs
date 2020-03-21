@@ -52,7 +52,7 @@ Let' assume you have a GNSS data file in RINEX format named `GARR2150.15o` that
 you wish to process. Let's also assume you have your API key and secret token
 ready ([fetch them in your user section](#how-to-obtain-your-api-key)):
 
-```bash
+``` bash
 export APIKEY="jason_api_key_here"
 export SECRET_TOKEN="your_secret_token_here"
 ```
@@ -154,7 +154,7 @@ for that to work)
 
 You can also use Python to automate this and download the results file (`results.zip`):
 
-```python
+```py3
 import json
 import urllib.request
 
@@ -169,7 +169,7 @@ urllib.request.urlretrieve(url)
 
 If you need to integrate API calls within Python instead of bash (with curl commands), you can use the `requests` library. The following example illustrates how to send a file to process in Jason:
 
-```python
+```py3
 import requests
 
 file = 'gnss_file_to_process.txt'

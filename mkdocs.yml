@@ -45,8 +45,10 @@ extra:
     - type: 'linkedin'
       link: 'https://www.linkedin.com/company/rokubun/'
 markdown_extensions:
+  - codehilite
   - admonition
   - pymdownx.details
+  - pymdownx.highlight
   - pymdownx.emoji:
       emoji_generator: !!python/name:pymdownx.emoji.to_svg
 
