@@ -32,6 +32,7 @@ Jason supports the following input formats to input GNSS observables
 - Data from Rokubun's receivers (Argonaut and Medea, which are Ublox-based, but
   also adding IMU and Event data)
 - [Google's Android GNSS logger](https://github.com/google/gps-measurement-tools/tree/master/GNSSLogger) (smartphone data)
+- [GPS Test app](https://play.google.com/store/apps/details?id=com.android.gpstest) (smartphone data)
 - RTCM 3 data
 - Septentrio binary (SBF) files
 
