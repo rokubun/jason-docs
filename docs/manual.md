@@ -48,6 +48,8 @@ In fact, Jason is fully implemented as an API and the front-end simply uses
 it. The API allows that you to e.g. program tasks in Jason using URLs via
 the command line of your Operating System or create plugins.
 
+For Android devices you can see how it's used in the  [GithHub](https://github.com/rokubun/jason-sdk-android) repository.
+
 ### Launching a process
 
 Let' assume you have a GNSS data file in RINEX format named `GARR2150.15o` that
@@ -91,6 +93,19 @@ files = {
 r = requests.post(url, headers=headers, files=files)
 ```
 
+```java tab="Android"
+  Context context;
+  JasonClient jasonClient = JasonClient.getInstance(context);
+  ProcessInformation processInformation;
+  // You should perform login before submiting a process with username and password
+  jasonClient.loging(username, password);
+  // Or you can login by settign the token 
+  jasonCLient.login(token)
+  Single<ProcessInformation> submitProcess = jasonClient.submitProcess(type, roverFile);
+  submitProcess.map(process -> processInformation = new ProcessInformation(process.getMessage(), process.getId()))
+
+```
+
 Now the process is being run in Rokubun's servers. The previous command replies
 with a small JSON formatted string with the status of the command (success
 indicates that the process has been correctly launched) and the process id that
@@ -126,6 +141,28 @@ headers = {
 }
 
 r = requests.get(url, headers=headers, params={ 'token' : SECRET_TOKEN })
+
+```
+
+```java tab="Android"
+  Context context;
+  JasonClient jasonClient = JasonClient.getInstance(context);
+
+  String processId=3145
+  Long maxTimeoutMillis = 60000L
+  ProcessStatus processStatus;
+
+  Observable<ProcessStatus> processStatus =  jasonClient.getProcessStatus(processId, maxTimeoutMillis) 
+
+  processStatus.map(process -> processStatus = new ProcessStatus(process.processLog, process.processResult))
+
+  // When process is finished you can get a specific result
+  processStatus.processResult.getSppKmlUrl()
+  processStatus.processResult.getPreciseCsvUrl()
+  ...
+  // Or can download results file
+  processStatus.processResult.getZipUrl()
+
 ```
 
 The JSON string will give details on the run as well as any log messages that
@@ -183,7 +220,7 @@ at the end, the link to the [zipped result file](#gnss-processor-files) with the
 }
 ```
 
-You can download the results file via the browser or, if you want to automate 
+You can download the results file via the browser, using Android version or, if you want to automate 
 the process, use Bash scripting, like so:
 
 ```bash
