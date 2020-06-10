@@ -12,6 +12,17 @@
     the actual error of the solution. To obtain an actual error of the solution an
     external reference for comparison is required.
 
+??? question "The height component is way off relative to other programs. Why is that?"
+    Please note that the solution provided by Jason is expressed in **WGS84**
+    coordinates. Therefore, the altitude is referred to the WGS84 reference
+    **ellipsoid**. If you compare this solution against the solution from
+    third-party programs that provide the solution in other reference frames
+    based on the geoid (instead of WGS84 ellipsoid), you will find large
+    discrepancies in the altitude component.
+
+    You can find the geoid height relative to the WGS84 ellipsoid in external tools such as
+    [UNAVCO's Geoid Height Calculator](https://www.unavco.org/software/geodetic-utilities/geoid-height-calculator/geoid-height-calculator.html).
+
 ??? question "Why Jason does not have global PPK coverage?"
     We rely on a series of more than 70 public world-wide, national and regional
     GNSS networks of Continuously Operating Reference Stations (CORS). These networks
