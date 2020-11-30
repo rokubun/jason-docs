@@ -1,6 +1,6 @@
 # Welcome to Jason documentation
 
-Jason is Rokubun's Positioning-as-a-Service (PaaS), a cloud service that compute
+Jason is Rokubun's Cloud PPK Service, a cloud service that compute
 the position of a receiver using the raw GNSS measurements.
 
 Jason works on a best-effort basis: it will attempt to compute the best possible
