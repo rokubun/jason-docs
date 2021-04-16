@@ -77,4 +77,4 @@ In total, we continuously monitor the availability of more than 10000 CORS stati
 distributed worldwide. Some areas are better covered than others but unfortunately
 we cannot provide global coverage.
 
-[![Jason PPK coverage](images/jason_coverage.png "Jason PPK coverage")](https://jason.rokubun.cat/#!/login#coverage)
+[![Jason PPK coverage](images/JASON_coverage_v2.png "Jason PPK coverage")](https://jason.rokubun.cat/#!/login#coverage)
