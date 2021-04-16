@@ -21,7 +21,7 @@ static dynamics in the navigation filter).
 The test setup (performed at the rooftop of Rokubun's headquarter offices at the
 MediaTIC building) is shown in the following picture:
 
-![AsteRx test setup](images/septentrio_static_test_mediatic.jpeg "AsteRx test setup")
+![AsteRx test setup](images/septentrio_static_test_mediatic_updated.jpeg "AsteRx test setup")
 
 The Septentrio AsteRx data has been processed with Jason with the following
 main characteristics:
