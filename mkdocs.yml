@@ -30,7 +30,6 @@ nav:
   - 'GNSS converter': converter.md
   - 'Processing strategies' : strategies.md
   - 'Other resources': 'resources.md'
-  - 'FAQ': faq.md
   - 'Contact us': contact.md
 extra_css:
   - 'stylesheets/extra.css'
