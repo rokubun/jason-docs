@@ -32,7 +32,7 @@ input file is in Rinex format and you are confident that the coordinates of the
 you can indicate a proper set of coordinates for the base station in the field
 **"External base station position (optional)"** in the form of latitude, longitude
 and height. Latitude and longitude shall be expressed in meters while the height
-should be expressed in height above the WGS84 ellipsoid.
+should be expressed in height above the ellipsoid.
 
 Also note that the formats supported by the base station are the same as the 
 ones supported by the rover receiver.
