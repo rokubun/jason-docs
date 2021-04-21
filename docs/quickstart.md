@@ -31,8 +31,8 @@ any base station for this tutorial, just follow these steps:
    a map window to show a preview of the results. The map contains both the
    track in SPP and PPP/PPK (if the service could apply one of these processing strategies)
    and also all the camera events (if present in the input file) represented
-   as red crosses. The result page contains also 3 images with the satellite
-   view, number of satellites as well as height profile (above WGS84 ellipsoid).
+   as red crosses. The result page also contains 3 images with the satellite
+   view, number of satellites as well as height profile (above the ellipsoid).
    Note that for static positioning, only one point will be plot in the map,
    and thus no height profile will be shown.
 ![View Results](images/jason_results.png "View Results")
