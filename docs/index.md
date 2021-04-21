@@ -43,7 +43,7 @@ Jason was created with the photogrammetry workflow in mind: a drone logs both
 raw GNSS data as well as triggers several photographs, whose time tags are
 also logged by the receiver (Argonaut supports that as well as the NEO-M8T and
 ZED-F9P chipsets from ublox). The operator does not worry about base station
-because he made sure that the campaign area is under Jason coverage.
+because he has previously ensured that the campaign area is under Jason coverage.
 
 Once the campaign is over, the operator uploads the data to our service, which
 will automatically find the closest base station available and compute both
