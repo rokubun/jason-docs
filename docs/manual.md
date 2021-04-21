@@ -7,17 +7,17 @@ Under the hood, Jason runs the open-source package
 on a best-effort basis, and attempts to run these
 [processing strategies](../strategies) in the following prioritized order:
 
-- _PPK_, Jason computes a coarse estimate of the rover position using _SPP_ in
+- _Post Processed Kinematic (PPK)_, Jason computes a coarse estimate of the rover position using _SPP_ in
   order to have a rough estimate of the receiver position and be able to
   automatically select the closest base station from the set of
   [stations continuously monitored by Jason](https://jason.rokubun.cat/#!/login#coverage).
   If a nearby station is found (less than a certain baseline),
   then the corresponding RINEX data is downloaded in order to perform differential
   positioning. Alike, if you provide Jason with a base station measurements file, it will undergo _PPK_ technique processing.
-- _PPP_, if no reference data is found, Jason will attempt PPP if the precise
+- _Precise Point Positioning (PPP)_, if no nearby base station is found, Jason will attempt PPP if the precise
   orbits and clocks for the day to be processed are found and the input data
   is multi-frequency.
-- _SPP_, if _PPP_ failed, the data processed using the broadcast orbits and 
+- _Single Point Positioning (SPP)_, if _PPP_ failed, the data processed using the broadcast orbits and 
   clocks will be delivered.
 
 ## Supported formats
