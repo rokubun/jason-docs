@@ -3,12 +3,12 @@
 Do not hesitate to contact us if you have questions or need support.
 
 Rokubun S.L. </br>
-Roc Boronat 117, 2nd floor, suite 8 </br>
+Carrer Llacuna 162-164, 1st floor, suite 103 </br>
 08018 Barcelona (Spain) </br>
 
 
-phone: +34.93.551.1490 </br>
-e-mail: [info@rokubun.cat](mailto:info@rokubun.cat?subject=[Jason doc] contact form inquiry) </br>
+phone: +34.935.992.154</br>
+e-mail: [support@rokubun.cat](mailto:support@rokubun.cat?subject=[Jason doc] contact form inquiry) </br>
 
 </br>
 </br>
