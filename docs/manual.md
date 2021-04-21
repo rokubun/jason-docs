@@ -261,9 +261,8 @@ Positions will be delivered as a comma separated file where the first line is
 a comment (starts with `#`) with a description of the fields, which are:
 
 - columns 1-2: **Epoch** of the solution, expressed as GPS week and seconds within the GPS week.
-- columns 3-5: **Position** in WGS84 reference frame (latitude, longitude and height). 
-                longitude and latitude expressed in decimal degrees and height in
-                meters above the WGS84 ellipsoid.
+- columns 3-5: **Position** longitude and latitude expressed in decimal degrees and height in
+                meters above the ellipsoid.
 - columns 6-8: Standard deviation in meters of the North, East and Up components.
                 Note that these values are the formal **errors** delivered by the
                 position filter (i.e. square root of the postfit variances) and
@@ -315,7 +314,7 @@ included in the KML file.
 As a visual summary of the processing task, a series of plots (in PNG format)
 are also included in the bundle. These files are:
 
-- `height.png`: Time series of the height above the WGS84 ellipsoid (in meters).
+- `height.png`: Time series of the height above the ellipsoid (in meters).
 - `skyplot.png`: Skyplot showing the distribution of the satellites that have
                  been used for the processing. The points in the plot have
                  different color coding, depending on the constellation. Also,
