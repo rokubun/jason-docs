@@ -37,7 +37,7 @@ main characteristics:
 |Sampling rate | 30 second |
 
 In order to assess the results, the same data file (converter to RINEX) has been
-processed using [Canadian Geodetic Survey of Natural Resources Canada Precise Point Positioning (CSRS-PPP)](https://webapp.geod.nrcan.gc.ca/geod/tools-outils/ppp.php?locale=en) (PPP) 
+processed using [Canadian Geodetic Survey of Natural Resources Canada Precise Point Positioning](https://webapp.geod.nrcan.gc.ca/geod/tools-outils/ppp.php?locale=en) (PPP-AR) 
 tool. The differences are shown in the table below:
 
 |component| NRCAN PPP (final products) | Jason PPK | difference (vs NRCAN)|
