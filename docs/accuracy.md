@@ -1,22 +1,23 @@
 # Accuracy analysis
 
-This section includes some accuracy analysis we have performed with Jason for
+This section includes an accuracy analysis we have performed with Jason for
 you to have an idea of which accuracy you can obtain with the service
 
 ## GNSS geodetic-grade receiver (static)
 
 The purpose of this test was to assess the accuracy that can be achieved using
-a geodetic grade GNSS receiver in static mode (non moving platform with 
-static dynamics in the navigation filter).
+a geodetic grade GNSS receiver and antenna in static mode (non moving platform).
 
 |Test setup||
 |:----|:------|
 |GNSS receiver | Septentrio AsteRx|
 |Antenna | Septentrio PolaNT |
-|Environment | Rooftop, open sky, no multipath structures nearby |
+|Environment | Rooftop, open sky|
 |Data length |  2.34 hours |
-|Sampling rate | 1 second |
-|Local time | 2019 Nov 18  12:45:20.000 |
+|Sampling rate | 15 second |
+|Number of epochs | 560 |
+|GPS start time | 2019 Nov 18  12:45:30.000 |
+|GPS end time | 2019 Nov 18  15:05:15.000 |
 
 The test setup (performed at the rooftop of Rokubun's headquarter offices at the
 MediaTIC building) is shown in the following picture:
@@ -30,23 +31,22 @@ main characteristics:
 |:---|:---|
 |Strategy| Post-Processing Kinematic (PPK)|
 |Dynamics| static |
-|Reference station | IGN BCLN (16km baseline) |
+|GNSS receiver | Leica GR50 |
+|Antenna | Leica AR25 |
+|Reference station | ICGC PLAN (17.4km baseline) |
+|Sampling rate | 30 second |
 
 In order to assess the results, the same data file (converter to Rinex) has been
 processed using [JPL APPS online Precise Post Processing](http://apps.gdgps.net/) (PPP) 
 tool. The differences are shown in the table below:
 
-|component| JPL APPS (ultra-rapid products) | Jason PPK | difference (vs JPL)|
+|component| NRCAN PPP (final products) | Jason PPK | difference (vs NRCAN)|
 |:---:|:---:|:----:|:----:|
-| x       |    4787691.861     | 4787692.106 |     0.245 |
-| y       |    183434.826      |  183434.274 |    -0.552 |
-| z       |    4196130.151     | 4196129.589 |    -0.562 |
+| UTM_X   |    432640.419      | 432640.414   |    -0.005 |
+| UTM_Y   |    4583770.355     |  4583770.352 |    -0.003 |
+| ellipsoidal   |   92.638     | 92.561 |    -0.077 |
 
-The **East/North/Up** difference between the two is -0.561 / -0.569 / -0.204 respectively.
-
-**Note**: PPP results (JPL and NRCan) were performed with
-ultra-rapid orbits (in the case of JPL) and also the data take was very short
-(2h), which in the case of PPP can be a drawback in terms of convergence time.
+Please note that we are currently working on fix that will properly compute the antenna height.
 
 ## Smartphone (non-moving dynamic)
 
