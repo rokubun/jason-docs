@@ -49,13 +49,13 @@ tool. The differences are shown in the table below:
 
 This test intends to provide an estimate accuracy of the best accuracy that can
 be achieved with a smartphone in the most benign environment possible (non moving,
-open sky, no multipath)
+open sky)
 
 |Test setup||
 |:----|:------|
 |GNSS receiver | Xiaomi Mi 8 |
 |Antenna | internal |
-|Environment | Rooftop, open sky, no multipath structures nearby |
+|Environment | Rooftop, open sky |
 |Data length |  7 minutes |
 |Sampling rate | 1 second |
 |Local time | 2019 Nov 19  12:17 |
