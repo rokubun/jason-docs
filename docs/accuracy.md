@@ -8,16 +8,16 @@ you to have an idea of which accuracy you can obtain with the service
 The purpose of this test was to assess the accuracy that can be achieved using
 a geodetic grade GNSS receiver and antenna in static mode (non moving platform).
 
-|Test setup||
-|:----|:------|
-|GNSS receiver | Septentrio AsteRx|
-|Antenna | Septentrio PolaNT |
-|Environment | Rooftop, open sky|
-|Data length |  2.34 hours |
-|Sampling rate | 15 second |
-|Number of epochs | 560 |
-|GPS start time | 2019 Nov 18  12:45:30.000 |
-|GPS end time | 2019 Nov 18  15:05:15.000 |
+|Test setup|Rover receiver|Base station
+|:----|:------|:------|
+|GNSS receiver | Septentrio AsteRx| Leica GR50 |
+|Antenna | Septentrio PolaNT | Leica AR25 |
+|Environment | Rooftop, open sky| open sky|
+|Data length |  2.34 hours | 24 hours |
+|Sampling rate | 15 second | 30 second |
+|Number of epochs | 560 | 2880 |
+|GPS start time | 2019 Nov 18  12:45:30.000 | 2019 Nov 18  00:00:00.000 |
+|GPS end time | 2019 Nov 18  15:05:15.000 | 2019 Nov 18  23:59:30.000 |
 
 The test setup (performed at the rooftop of Rokubun's headquarter offices at the
 MediaTIC building) is shown in the following picture:
@@ -31,10 +31,7 @@ main characteristics:
 |:---|:---|
 |Strategy| Post-Processing Kinematic (PPK)|
 |Dynamics| static |
-|GNSS receiver | Leica GR50 |
-|Antenna | Leica AR25 |
 |Reference station | ICGC PLAN (17.4km baseline) |
-|Sampling rate | 30 second |
 
 In order to assess the results, the same data file (converter to RINEX) has been
 processed using [Canadian Geodetic Survey of Natural Resources Canada Precise Point Positioning](https://webapp.geod.nrcan.gc.ca/geod/tools-outils/ppp.php?locale=en) (PPP-AR) 
