@@ -36,8 +36,8 @@ main characteristics:
 |Reference station | ICGC PLAN (17.4km baseline) |
 |Sampling rate | 30 second |
 
-In order to assess the results, the same data file (converter to Rinex) has been
-processed using [JPL APPS online Precise Post Processing](http://apps.gdgps.net/) (PPP) 
+In order to assess the results, the same data file (converter to RINEX) has been
+processed using [Canadian Geodetic Survey of Natural Resources Canada Precise Point Positioning (CSRS-PPP)](https://webapp.geod.nrcan.gc.ca/geod/tools-outils/ppp.php?locale=en) (PPP) 
 tool. The differences are shown in the table below:
 
 |component| NRCAN PPP (final products) | Jason PPK | difference (vs NRCAN)|
