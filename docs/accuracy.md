@@ -41,9 +41,9 @@ tool. The differences are shown in the table below:
 |:---:|:---:|:----:|:----:|
 | UTM_X   |    432640.419      | 432640.414   |    -0.005 |
 | UTM_Y   |    4583770.355     |  4583770.352 |    -0.003 |
-| ellipsoidal   |   92.638     | 92.561 |    -0.077 |
+| ellipsoidal   |   92.638     | 92.561 |    -0.077* |
 
-Please note that we are currently working on fix that will properly compute the antenna height.
+*Please note that we are currently working on fix for JASON so that the antenna models are properly taken in to account, this is expected to substantially close the gap between the NRCAN PPP solution and the JASON PPK.
 
 ## Smartphone (non-moving dynamic)
 
