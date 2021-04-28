@@ -22,6 +22,7 @@ To execute this example, follow these steps:
 2. Log in with your account and Jason and go to the "GNSS processor" tab.
 3. Drag-and-drop the two downloaded files at the _rover_ and _base station_ boxes,
 as shown below.
+
 ![Upload rover and base station files](images/example_base_upload.png "Upload rover and base station files")
 4. Press "Process file" and wait for the process to finish. The rest of the steps
 are the same as those of the [quick start guide](../quickstart).
