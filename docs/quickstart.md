@@ -21,12 +21,16 @@ any base station for this tutorial, just follow these steps:
   (should be the default page after logging in).
 4. Drag-and-drop the downloaded file into the "Rover GNSS data file" box. Alternatively,
   you can click the box "Select file" and a file explorer window will pop-up.
+  
 ![Select file](images/quickstart_upload.png "Select file")
+
 5. Press **"Process file"**. The file will be uploaded and the processing will start,
    the front-end will issue several progress logs to inform about the strategy
    used and status. When the process is Finished, a button will appear at the 
    bottom of the page.
+   
 ![Process file](images/jason_progress.png "Process file")
+
 6. Click **"View Results"** to access the results page, which contains
    a map window to show a preview of the results. The map contains both the
    track in SPP and PPP/PPK (if the service could apply one of these processing strategies)
@@ -35,7 +39,9 @@ any base station for this tutorial, just follow these steps:
    view, number of satellites as well as height profile (above the ellipsoid).
    Note that for static positioning, only one point will be plot in the map,
    and thus no height profile will be shown.
+   
 ![View Results](images/jason_results.png "View Results")
+
 7. You can access the log messages if you click the **"View Log"** box at the top
    of the page and **"Download results"** as a ZIP format. The contents of the
    file are described in the [file format section of this documentation](../manual#result-files).
