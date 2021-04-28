@@ -6,7 +6,7 @@ IMU data as well as the time events (if present in the file). Jason provides,
 free of charge, a converter that does that.
 
 First of all login to the service and head towards the **GNSS converter** 
-(at the top of the page). You should see the following page:
+(at the top of the page). You should see the following page: \
 
 ![GNSS converter for Argonaut data](images/howto_conversor.png "GNSS converter for Argonaut data")
 
