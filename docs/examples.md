@@ -24,6 +24,7 @@ To execute this example, follow these steps:
 as shown below.
 
 ![Upload rover and base station files](images/example_base_upload.png "Upload rover and base station files")
+
 4. Press "Process file" and wait for the process to finish. The rest of the steps
 are the same as those of the [quick start guide](../quickstart).
 
