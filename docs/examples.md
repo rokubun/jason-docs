@@ -18,7 +18,7 @@ with the GNSS data from the base station.
 
 To execute this example, follow these steps:
 
-1. Download the [sample rover](https://github.com/rokubun/jason-docs/blob/master/assets/argonaut_cam.rok?raw=true) and [base station](https://github.com/rokubun/jason-docs/blob/master/assets/PLAN00ESP_R_20180580000_01D_30S_MO.obs?raw=true) files.
+1. Download the [sample rover](https://github.com/rokubun/jason-docs/blob/master/assets/XXXX00CAT_R_20201201204_22M_01S_MO.rnx?raw=true) and [base station](https://github.com/rokubun/jason-docs/blob/master/assets/MARE00ESP_R_20201201204_22M_01S_MO.rnx?raw=true) files.
 2. Log in with your account and Jason and go to the "GNSS processor" tab.
 3. Drag-and-drop the two downloaded files at the _rover_ and _base station_ boxes,
 as shown below.
