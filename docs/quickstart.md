@@ -14,8 +14,8 @@ any base station for this tutorial, just follow these steps:
 1. Go to the [Jason web page](https://jason.rokubun.cat) and **register**. You will
   need to specify an e-mail and a password. Once you click "Sign up", you should
   receive an e-mail with a verification link.
-2. [Download the test file](https://github.com/rokubun/jason-docs/blob/master/assets/XXXX00CAT_R_20201201204_22M_01S_MO.rnx?raw=true), which has been taken with an
-   [Argonaut GNSS receiver](https://www.rokubun.cat/gnss-receiver/)
+2. [Download the test file](https://github.com/rokubun/jason-docs/blob/master/assets/XXXX00CAT_R_20201201204_22M_01S_MO.rnx?raw=true), which has been taken with a DJI Mavic 2 Pro equiped with a Topodrone PPK system.
+   [Topodrone PPK system](https://topodrone.org/product/drones/pro/m2p-ppk/)
   and contains, besides GNSS raw measurements, IMU data and camera events.
 3. **Log in** with your credentials into Jason and go to "GNSS Processor"
   (should be the default page after logging in).
