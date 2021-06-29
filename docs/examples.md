@@ -18,7 +18,7 @@ with the GNSS data from the base station.
 
 To execute this example, follow these steps:
 
-1. Download one or several of the test datasets listed below
+1- Download one or several of the test datasets listed below
 
 Use case | Rover file | Base station file | Event file
 :---:|:---:|:---:|:---:
@@ -28,13 +28,14 @@ Topodrone on a Mavic 2 Pro |
 Rokbun's ARGONAUT | [Rover](https://github.com/rokubun/jason-docs/blob/master/assets/XXXX00CAT_R_20201201204_22M_01S_MO.rnx?raw=true) | [Base station](https://github.com/rokubun/jason-docs/blob/master/assets/MARE00ESP_R_20201201204_22M_01S_MO.rnx?raw=true) | No event file
 Septentrio Mosaic X5 | 
 
-2. Log in with your account and Jason and go to the "GNSS processor" tab.
-3. Drag-and-drop the two downloaded files at the _rover_ and _base station_ boxes,
+2- Log in with your account and Jason and go to the "GNSS processor" tab.
+
+3- Drag-and-drop the two downloaded files at the _rover_ and _base station_ boxes,
 as shown below.
 
 ![Upload rover and base station files](images/example_base_upload.png "Upload rover and base station files")
 
-4. Press "Process file" and wait for the process to finish. The rest of the steps
+4- Press "Process file" and wait for the process to finish. The rest of the steps
 are the same as those of the [quick start guide](../quickstart).
 
 An important note to consider is regarding the **base station coordinates**. If the
