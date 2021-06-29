@@ -25,7 +25,7 @@ Use case | Rover file | Base station file | Event file
 Ublox raw file with tagged events | 
 DJI Phantom 4 | 
 Topodrone on a Mavic 2 Pro | 
-Rokbun's ARGONAUT | [Rover](https://github.com/rokubun/jason-docs/blob/master/assets/XXXX00CAT_R_20201201204_22M_01S_MO.rnx?raw=true) | [base station](https://github.com/rokubun/jason-docs/blob/master/assets/MARE00ESP_R_20201201204_22M_01S_MO.rnx?raw=true) | No event file
+Rokbun's ARGONAUT | [Rover](https://github.com/rokubun/jason-docs/blob/master/assets/XXXX00CAT_R_20201201204_22M_01S_MO.rnx?raw=true) | [Base station](https://github.com/rokubun/jason-docs/blob/master/assets/MARE00ESP_R_20201201204_22M_01S_MO.rnx?raw=true) | No event file
 Septentrio Mosaic X5 | 
 
 2. Log in with your account and Jason and go to the "GNSS processor" tab.
