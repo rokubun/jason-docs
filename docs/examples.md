@@ -20,7 +20,7 @@ To execute this example, follow these steps:
 
 1- Download one or several of the test datasets listed below
 
-Use case | Rover file | Base station file | Event file
+Use case description| Rover file | Base station file | Event file
 :---:|:---:|:---:|:---:
 DJI Phantom 4 RTK drone| [Rover](https://jason-docs.s3.eu-central-1.amazonaws.com/DJI_with_cam_events/101_0082_Rinex.rnx) | [Base station](https://jason-docs.s3.eu-central-1.amazonaws.com/DJI_with_cam_events/RTK134_202102051543_13ALG6P0050051.DAT) | [events file](https://jason-docs.s3.eu-central-1.amazonaws.com/DJI_with_cam_events/101_0082_Timestamp.MRK) | No events file
 Topodrone on a Mavic 2 Pro | [Rover](https://jason-docs.s3.eu-central-1.amazonaws.com/Topodrone/TopoDrone.ubx) | [Base station](https://jason-docs.s3.eu-central-1.amazonaws.com/Topodrone/MARE00ESP_R_20201201204_22M_01S_MO.rnx) | Within rover file
