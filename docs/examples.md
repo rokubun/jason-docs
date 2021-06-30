@@ -22,7 +22,6 @@ To execute this example, follow these steps:
 
 Use case | Rover file | Base station file | Event file
 :---:|:---:|:---:|:---:
-Ublox raw file with tagged events | 
 DJI Phantom 4 RTK drone| [Rover](https://jason-docs.s3.eu-central-1.amazonaws.com/DJI_with_cam_events/101_0082_Rinex.rnx) | [Base station](https://jason-docs.s3.eu-central-1.amazonaws.com/DJI_with_cam_events/RTK134_202102051543_13ALG6P0050051.DAT) | [events file](https://jason-docs.s3.eu-central-1.amazonaws.com/DJI_with_cam_events/101_0082_Timestamp.MRK) | No events file
 Topodrone on a Mavic 2 Pro | [Rover](https://jason-docs.s3.eu-central-1.amazonaws.com/Topodrone/XXXX00CAT_R_20201201204_22M_01S_MO.rnx) | [Base station](https://jason-docs.s3.eu-central-1.amazonaws.com/Topodrone/MARE00ESP_R_20201201204_22M_01S_MO.rnx) | No events file
 Rokbun's ARGONAUT on a drone | [Rover](https://jason-docs.s3.eu-central-1.amazonaws.com/Rokubun+ARGONAUT/argonaut_cam.rok) | No base station | No events file
