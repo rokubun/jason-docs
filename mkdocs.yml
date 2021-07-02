@@ -24,7 +24,7 @@ nav:
   - 'Description': index.md
   - 'GNSS processor': 
     - 'Quick start': quickstart.md
-    - 'Manual': manual.md
+    - 'Manual & API': manual.md
     - 'Examples': examples.md
     - 'Accuracy': accuracy.md
   - 'GNSS converter': converter.md
