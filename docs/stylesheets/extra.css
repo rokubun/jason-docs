@@ -4,6 +4,7 @@
 
 .md-header-nav__button.md-logo * {
     width: 200px;
+    margin-top: 0.08rem;
 }
 
 .md-header-nav__button.md-rokubun-logo * {
