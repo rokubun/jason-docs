@@ -48,6 +48,8 @@ In fact, Jason is fully implemented as an API and the front-end simply uses
 it. The API allows that you to e.g. program tasks in Jason using URLs via
 the command line of your Operating System or create plugins.
 
+The full Swagger documentation of the API can be accessed [here](http://api-argonaut.rokubun.cat/doc/).
+
 For Android devices you can see how it's used in the  [GithHub](https://github.com/rokubun/jason-sdk-android) repository.
 
 ### Launching a process
