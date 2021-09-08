@@ -28,8 +28,9 @@ nav:
     - 'Examples': examples.md
     - 'Accuracy': accuracy.md
   - 'GNSS converter': converter.md
-  - 'Processing strategies' : strategies.md
-  - 'Other resources': 'resources.md'
+  - 'Processing strategies': strategies.md
+  - 'u-blox configuration': otherhardware.md
+  - 'Other resources': resources.md
   - 'Contact us': contact.md
 extra_css:
   - 'stylesheets/extra.css'
