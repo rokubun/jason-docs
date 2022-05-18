@@ -63,7 +63,7 @@ export APIKEY="jason_api_key_here"
 export SECRET_TOKEN="your_secret_token_here"
 
 file="GARR2150.15o"
-url="http://api-argonaut.rokubun.cat/api/processes/"
+url="https://api.jason.rokubun.cat/api/processes/"
 
 curl -X POST  -H "accept: application/json" \
                        -H "Content-Type: multipart/form-data" \
