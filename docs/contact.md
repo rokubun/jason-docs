@@ -3,7 +3,7 @@
 Do not hesitate to contact us if you have questions or need support.
 
 Rokubun S.L. </br>
-Carrer Llacuna 162-164, 1st floor, suite 103 </br>
+Carrer Llacuna 162-164, 1st floor, suite 102 </br>
 08018 Barcelona (Spain) </br>
 
 
