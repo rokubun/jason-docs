@@ -48,7 +48,7 @@ In fact, Jason is fully implemented as an API and the front-end simply uses
 it. The API allows that you to e.g. program tasks in Jason using URLs via
 the command line of your Operating System or create plugins.
 
-The full Swagger documentation of the API can be accessed [here](http://api-argonaut.rokubun.cat/doc/).
+The full Swagger documentation of the API can be accessed [here](https://api.jason.rokubun.cat/doc/).
 
 For Android devices you can see how it's used in the  [GithHub](https://github.com/rokubun/jason-sdk-android) repository.
 
@@ -79,7 +79,7 @@ APIKEY="jason_api_key_here"
 SECRET_TOKEN="your_secret_token_here"
 
 file = 'GARR2150.15o'
-url='http://api-argonaut.rokubun.cat/api/processes'
+url='https://api.jason.rokubun.cat/api/processes'
 
 headers = {
     'accept': 'application/json',
@@ -124,7 +124,7 @@ in your user area of the front-end or, alternatively with this curl command
 ```bash tab="Bash"
 
 process_id="707"
-url="http://api-argonaut.rokubun.cat/api/processes/${process_id}"
+url="https://api.jason.rokubun.cat/api/processes/${process_id}"
 
 curl -X GET -H "ApiKey: ${APIKEY}" \
                      -H "accept: application/json" "${url}?token=${SECRET_TOKEN}"
@@ -135,7 +135,7 @@ import requests
 
 process_id=3145
 
-url='http://api-argonaut.rokubun.cat/api/processes/{}'.format(process_id)
+url='https://api.jason.rokubun.cat/api/processes/{}'.format(process_id)
 
 headers = {
     'accept': 'application/json',
