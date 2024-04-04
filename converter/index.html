@@ -1,0 +1,770 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+        <link rel="canonical" href="https://jason.docs.rokubun.cat/converter/">
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-4.4.2">
+    
+    
+      
+        <title>GNSS converter - Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.50f26899.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.4f3b7450.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.74668098.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mononame&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mononame","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    
+      
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "UA-148380836-1", "auto")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="rokubun" data-md-color-accent="rokubun-accent">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#gnss-converter" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://jason.docs.rokubun.cat/" title="Documentation" class="md-header-nav__button md-logo">
+          
+            <img src="../images/jason_logo.png" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Documentation
+            </span>
+            <span class="md-header-nav__topic">
+              
+                GNSS converter
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/rokubun/jason-docs" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    rokubun/jason-docs
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://jason.docs.rokubun.cat/" title="Documentation" class="md-nav__button md-logo">
+      
+        <img src="../images/jason_logo.png" width="48" height="48">
+      
+    </a>
+    Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/rokubun/jason-docs" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    rokubun/jason-docs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Description" class="md-nav__link">
+      Description
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      GNSS processor
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        GNSS processor
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../quickstart/" title="Quick start" class="md-nav__link">
+      Quick start
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../manual/" title="Manual & API" class="md-nav__link">
+      Manual & API
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../examples/" title="Examples" class="md-nav__link">
+      Examples
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../accuracy/" title="Accuracy" class="md-nav__link">
+      Accuracy
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        GNSS converter
+      </label>
+    
+    <a href="./" title="GNSS converter" class="md-nav__link md-nav__link--active">
+      GNSS converter
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#converted-files" class="md-nav__link">
+    Converted files
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#argonaut-gnss-file" class="md-nav__link">
+    Argonaut GNSS file
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#argonaut-imu-file" class="md-nav__link">
+    Argonaut IMU file
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#argonaut-cam-file" class="md-nav__link">
+    Argonaut CAM file
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#third-party-options" class="md-nav__link">
+    Third party options
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#teqc" class="md-nav__link">
+    teqc
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#convbin" class="md-nav__link">
+    convbin
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../strategies/" title="Processing strategies" class="md-nav__link">
+      Processing strategies
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../otherhardware/" title="Minimum data required" class="md-nav__link">
+      Minimum data required
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../resources/" title="Other resources" class="md-nav__link">
+      Other resources
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../contact/" title="Contact us" class="md-nav__link">
+      Contact us
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#converted-files" class="md-nav__link">
+    Converted files
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#argonaut-gnss-file" class="md-nav__link">
+    Argonaut GNSS file
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#argonaut-imu-file" class="md-nav__link">
+    Argonaut IMU file
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#argonaut-cam-file" class="md-nav__link">
+    Argonaut CAM file
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#third-party-options" class="md-nav__link">
+    Third party options
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#teqc" class="md-nav__link">
+    teqc
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#convbin" class="md-nav__link">
+    convbin
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/rokubun/jason-docs/edit/master/docs/converter.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="gnss-converter">GNSS converter</h1>
+<p>If you own an Argonaut or Medea receiver you are probably wondering how to
+convert the <code>.rok</code> files into something else, or how to extract both the
+IMU data as well as the time events (if present in the file). Jason provides,
+free of charge, a converter that does that.</p>
+<p>First of all login to the service and head towards the <strong>GNSS converter</strong> 
+(at the top of the page). You should see the following page:</p>
+<p><img alt="GNSS converter for Argonaut data" src="../images/howto_conversor.png" title="GNSS converter for Argonaut data" /></p>
+<p>Simply drag and drop the file you want to process in the <code>Raw file</code>
+box and press convert. Once the process is finished, press <code>Download zip</code> to 
+fetch the data. Assuming that the you uploaded a file named <code>&lt;input_file&gt;</code>, you
+should see the following files:</p>
+<ul>
+<li><code>&lt;input_file&gt;.rnx</code>: The Rinex file (version 3.03) with the GNSS raw measurements recorded by the receiver</li>
+<li><code>&lt;input_file&gt;.rnx_imu.csv</code>: A columnar file with the IMU data, time tagged in GPS time. See the complete format description <a href="#argonaut-imu-file">here</a>.</li>
+<li><code>&lt;input_file&gt;.rnx_cam.csv</code>: A columnar file with the event data (e.g. camera event data). See the complete format description <a href="#argonaut-cam-file">here</a>.</li>
+</ul>
+<p>Actually, if you have a receiver that ships a ublox receiver, not necessarily
+our own, you can still use the tool to convert to Rinex file. However we will
+always deny you can do it ;P</p>
+<h2 id="converted-files">Converted files</h2>
+<p>This section includes a description of the files delivered by the GNSS converter</p>
+<h3 id="argonaut-gnss-file">Argonaut GNSS file</h3>
+<p>Rokubun's Argonaut/Medea receivers store GNSS in Ublox format. The output of the GNSS converter in terms of GNSS measurements data will be the equivalent RINEX 3.03 file as follows:</p>
+<div class="highlight"><pre><span></span><code>     3.03           OBSERVATION DATA    M (MIXED)           RINEX VERSION / TYPE
+Rokubun core        rokubun             2019-08-12 15:43:35 PGM / RUN BY / DATE
+UNKN                                                        MARKER NAME
+unknown             unknown                                 OBSERVER / AGENCY
+unknown             unknown             unknown             REC # / TYPE / VERS
+unknown             unknown                                 ANT # / TYPE
+        0.0000        0.0000        0.0000                  APPROX POSITION XYZ
+        0.0000        0.0000        0.0000                  ANTENNA: DELTA H/E/N
+  2019    06    05    01    52   03.7652649                 TIME OF FIRST OBS
+G    4 C1C L1C D1C S1C                                      SYS / # / OBS TYPES
+R    4 C1C L1C D1C S1C                                      SYS / # / OBS TYPES
+E    4 C1C L1C D1C S1C                                      SYS / # / OBS TYPES
+                                                            END OF HEADER
+&gt; 2019 06 05 01 52 20.2019999  0  6
+G05  21643026.31606 113734869.95806     -2084.85906        40.00006
+G13  20940404.71107 110042563.43007       650.48707        45.00007
+G15  21819537.83307 114662444.00207      2552.08207        46.00007
+G29  22272808.61807 117044397.73607     -2139.16707        45.00007
+G30  24262711.51305 127501402.06305      -245.06005        34.00005
+E13  24476988.50208 128627441.38908       970.55808        49.00008
+</code></pre></div>
+<h3 id="argonaut-imu-file">Argonaut IMU file</h3>
+<p>Rokubun's Argonaut/Medea receivers store GNSS data as well as IMU data from its
+inertial sensor. This <strong>data is syncrhonized</strong> with the GPS time scale and stored
+in the SD card along with the GNSS raw measurements. When using the conversion
+tool from Jason, a CSV file with the IMU data will be generated. The file starts
+with a comment line (starting with <code>#</code>) that describes each column as well as
+the appropriate units:</p>
+<ul>
+<li><code>gps_week</code> The GPS week of the time stamp</li>
+<li><code>gps_tow</code> The seconds of the GPS week</li>
+<li><code>mag_x</code>, <code>mag_y</code>, <code>mag_z</code>, 3 components (XYZ) of the magnetometer, expressed in micro-Teslas</li>
+<li><code>gyro_x</code>, <code>gyro_y</code>, <code>gyro_z</code>, 3 components (XYZ) of the gyroscope, expressed in degrees per second</li>
+<li><code>accel_x</code>, <code>accel_y</code>, <code>accel_z</code>, 3 components (XYZ) of the accelerometer, expressed in g's (9.81 m/s^2)</li>
+</ul>
+<p>All inertial values are referred to the <strong>body reference frame</strong>. Check the
+Argonaut/Medea documentation for further details.</p>
+<p>Example of IMU file:</p>
+<div class="highlight"><pre><span></span><code># Imu,gps_week,gps_tow[seconds],mag_x[uT],mag_y[uT],mag_z[uT],gyro_x[deg/s],giro_y[deg/s],giro_z[deg/s],accel_x[g],accel_y[g],accel_z[g]
+Imu,1990,210938.388921000,-8.400,56.550,-33.600,-2.305,-0.580,0.641,-0.007,0.053,-0.983
+Imu,1990,210938.398899000,-9.000,55.800,-31.200,-2.290,-0.641,0.626,-0.015,0.060,-0.980
+Imu,1990,210938.408876000,-7.650,53.700,-33.150,-2.275,-0.702,0.626,-0.010,0.053,-0.985
+Imu,1990,210938.518632000,-9.750,56.250,-32.250,-2.275,-0.565,0.626,-0.008,0.054,-0.981
+Imu,1990,210938.528610000,-9.000,55.800,-33.900,-2.290,-0.504,0.626,-0.007,0.059,-0.979
+Imu,1990,210938.538588000,-10.500,55.200,-34.200,-2.275,-0.458,0.641,-0.008,0.057,-0.987
+Imu,1990,210938.548566000,-9.000,56.250,-33.600,-2.275,-0.458,0.641,-0.015,0.057,-0.980
+Imu,1990,210938.558543000,-7.650,56.250,-33.600,-2.275,-0.473,0.626,-0.013,0.058,-0.988
+Imu,1990,210938.593055000,-9.300,55.950,-33.000,-2.305,-0.489,0.641,-0.015,0.059,-0.979
+Imu,1990,210938.603033000,-8.550,54.900,-33.450,-2.290,-0.489,0.626,-0.016,0.056,-0.978
+Imu,1990,210938.613011000,-9.000,56.850,-33.150,-2.305,-0.550,0.626,-0.012,0.056,-0.982
+Imu,1990,210938.622988000,-10.200,55.200,-32.850,-2.305,-0.580,0.626,-0.012,0.059,-0.984
+</code></pre></div>
+<h3 id="argonaut-cam-file">Argonaut CAM file</h3>
+<p>In addition, Argonaut/Medea receivers store any time event that has been
+triggered during the data recording campaign by means of a hot-shoe mounted
+on a photogrammetry SLR camera or <a href="http://www.micasense.com">MicaSense</a>.
+Converting a file that contains time (cam) events will result in the generation
+of a file with 2 columns: (1) the GPS week and (2) the seconds within the GPS
+week when the time event took place.</p>
+<p>The file has as many rows as events detected by the receiver and the
+<strong>time tag is synchronized</strong> to the time scale provided by the GNSS receiver.</p>
+<p>If no cam events have been detected, no file will be generated.</p>
+<p>Example of CAM (time event) file:</p>
+<div class="highlight"><pre><span></span><code># Event,gps_week,gps_tow[seconds]
+Event,1990,211188.789716000
+Event,1990,211193.854405000
+Event,1990,211198.683787000
+Event,1990,211201.679891000
+Event,1990,211374.665552000
+Event,1990,211377.808189000
+Event,1990,211380.612900000
+Event,1990,211383.346676000
+Event,1990,211385.930332000
+</code></pre></div>
+<h2 id="third-party-options">Third party options</h2>
+<p>If you'd rather convert the files yourself without using our platform, you just
+have to know that any tool that is able to parse ublox binary format (<code>ubx</code>) will
+convert your files into Rinex format. Two examples are UNAVCO's <code>teqc</code> and RTKLIB's
+<code>convbin</code> (or its Windows GUI equivalent <code>rtkconv</code>). </p>
+<p>The <a href="../resources/#external-links">resource section</a> of
+this documentation contains links on how to obtain them.
+Note however, that you will have to download these tools yourself or, if you
+are familiar with Docker, we compiled an image (<a href="https://hub.docker.com/r/rokubun/gnss_tools">rokubun/gnss_tools</a>) with these tools included (and much more).</p>
+<p>For the examples given in the following sections, you will need the sample <code>rok</code> file <a href="https://github.com/rokubun/jason-docs/raw/master/assets/argonaut_cam.rok">argonaut_cam.rok</a>.</p>
+<h3 id="teqc">teqc</h3>
+<p>To convert the <code>rok</code> file into Rinex 2 (adding some header fields), use the
+following command:</p>
+<div class="highlight"><pre><span></span><code><span class="nv">marker_name</span><span class="o">=</span><span class="s2">&quot;ARGO&quot;</span>
+<span class="nv">rx_type</span><span class="o">=</span><span class="s2">&quot;argonaut&quot;</span>
+<span class="nv">ant_type</span><span class="o">=</span><span class="s2">&quot;internal/patch&quot;</span>
+teqc<span class="w">  </span>-ublox<span class="w"> </span>ubx<span class="w"> </span>-O.rt<span class="w"> </span><span class="si">${</span><span class="nv">rx_type</span><span class="si">}</span><span class="w"> </span>-O.at<span class="w"> </span><span class="si">${</span><span class="nv">ant_type</span><span class="si">}</span><span class="w"> </span>-O.mo<span class="w"> </span><span class="si">${</span><span class="nv">marker_name</span><span class="si">}</span><span class="w"> </span>argonaut_cam.rok<span class="w"> </span>&gt;<span class="w"> </span>argo0580.18o
+</code></pre></div>
+<h3 id="convbin">convbin</h3>
+<p>If you'r rather use <code>convbin</code>, please use this command (to output the data in
+Rinex 3.03 format):</p>
+<div class="highlight"><pre><span></span><code><span class="nv">marker_name</span><span class="o">=</span><span class="s2">&quot;ARGO&quot;</span>
+<span class="nv">rx_number</span><span class="o">=</span><span class="s2">&quot;03018-1-0xxx&quot;</span>
+<span class="nv">rx_type</span><span class="o">=</span><span class="s2">&quot;argonaut&quot;</span>
+<span class="nv">ant_type</span><span class="o">=</span><span class="s2">&quot;internal/patch&quot;</span>
+convbin<span class="w"> </span>-v<span class="w"> </span><span class="m">3</span>.03<span class="w"> </span>-od<span class="w"> </span>-os<span class="w"> </span>-r<span class="w"> </span>ubx<span class="w"> </span>-o<span class="w">  </span>argo0580.18o<span class="w"> </span>-hr<span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">rx_number</span><span class="si">}</span><span class="s2">/</span><span class="si">${</span><span class="nv">rx_type</span><span class="si">}</span><span class="s2">/&quot;</span><span class="w"> </span>-ha<span class="w"> </span><span class="s2">&quot;/</span><span class="si">${</span><span class="nv">ant_type</span><span class="si">}</span><span class="s2">&quot;</span><span class="w"> </span>-hm<span class="w"> </span><span class="si">${</span><span class="nv">marker_name</span><span class="si">}</span><span class="w"> </span>argonaut_cam.rok
+</code></pre></div>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../accuracy/" title="Accuracy" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Accuracy
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../strategies/" title="Processing strategies" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Processing strategies
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../assets/fonts/font-awesome.css">
+    
+      <a href="https://www.rokubun.cat" class="md-footer-social__link fa fa-globe"></a>
+    
+      <a href="https://twitter.com/rokubn" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="https://www.linkedin.com/company/rokubun/" class="md-footer-social__link fa fa-linkedin"></a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.8c9696ed.js"></script>
+      
+      <script>app.initialize({version:"1.4.2",url:{base:".."}})</script>
+      
+    
+  </body>
+</html>

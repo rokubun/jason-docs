@@ -1,0 +1,23 @@
+.md-footer-nav__inner{
+    display: none;
+} 
+
+.md-header-nav__button.md-logo * {
+    width: 200px;
+    margin-top: 0.08rem;
+}
+
+.md-header-nav__button.md-rokubun-logo * {
+    width: 43px;
+    margin-top: -0.5rem;
+    height: 43px;
+}
+
+@media only screen and (max-width: 76.1875em) {
+    .md-header-nav__button.md-icon--home, .md-header-nav__button.md-rokubun-logo {
+        display: none;
+    }
+    .md-nav__button img {
+        width: 2em;
+    }
+}

@@ -1,0 +1,735 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+        <link rel="canonical" href="https://jason.docs.rokubun.cat/accuracy/">
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-4.4.2">
+    
+    
+      
+        <title>Accuracy - Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.50f26899.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.4f3b7450.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.74668098.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mononame&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mononame","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    
+      
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "UA-148380836-1", "auto")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="rokubun" data-md-color-accent="rokubun-accent">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#accuracy-analysis" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://jason.docs.rokubun.cat/" title="Documentation" class="md-header-nav__button md-logo">
+          
+            <img src="../images/jason_logo.png" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Documentation
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Accuracy
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/rokubun/jason-docs" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    rokubun/jason-docs
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://jason.docs.rokubun.cat/" title="Documentation" class="md-nav__button md-logo">
+      
+        <img src="../images/jason_logo.png" width="48" height="48">
+      
+    </a>
+    Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/rokubun/jason-docs" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    rokubun/jason-docs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Description" class="md-nav__link">
+      Description
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      GNSS processor
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        GNSS processor
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../quickstart/" title="Quick start" class="md-nav__link">
+      Quick start
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../manual/" title="Manual & API" class="md-nav__link">
+      Manual & API
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../examples/" title="Examples" class="md-nav__link">
+      Examples
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Accuracy
+      </label>
+    
+    <a href="./" title="Accuracy" class="md-nav__link md-nav__link--active">
+      Accuracy
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#gnss-geodetic-grade-receiver-static" class="md-nav__link">
+    GNSS geodetic-grade receiver (static)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#smartphone-non-moving-dynamic" class="md-nav__link">
+    Smartphone (non-moving dynamic)
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../converter/" title="GNSS converter" class="md-nav__link">
+      GNSS converter
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../strategies/" title="Processing strategies" class="md-nav__link">
+      Processing strategies
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../otherhardware/" title="Minimum data required" class="md-nav__link">
+      Minimum data required
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../resources/" title="Other resources" class="md-nav__link">
+      Other resources
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../contact/" title="Contact us" class="md-nav__link">
+      Contact us
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#gnss-geodetic-grade-receiver-static" class="md-nav__link">
+    GNSS geodetic-grade receiver (static)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#smartphone-non-moving-dynamic" class="md-nav__link">
+    Smartphone (non-moving dynamic)
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/rokubun/jason-docs/edit/master/docs/accuracy.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="accuracy-analysis">Accuracy analysis</h1>
+<p>This section includes an accuracy analysis we have performed with Jason for
+you to have an idea of which accuracy you can obtain with the service</p>
+<h2 id="gnss-geodetic-grade-receiver-static">GNSS geodetic-grade receiver (static)</h2>
+<p>The purpose of this test was to assess the accuracy that can be achieved using
+a geodetic grade GNSS receiver and antenna in static mode (non moving platform).</p>
+<table>
+<thead>
+<tr>
+<th align="left">Test setup</th>
+<th align="left">Rover receiver</th>
+<th align="left">Base station</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">GNSS receiver</td>
+<td align="left">Septentrio AsteRx</td>
+<td align="left">Leica GR50</td>
+</tr>
+<tr>
+<td align="left">Antenna</td>
+<td align="left">Septentrio PolaNT</td>
+<td align="left">Leica AR25</td>
+</tr>
+<tr>
+<td align="left">Environment</td>
+<td align="left">Rooftop, open sky</td>
+<td align="left">open sky</td>
+</tr>
+<tr>
+<td align="left">Data length</td>
+<td align="left">2.34 hours</td>
+<td align="left">24 hours</td>
+</tr>
+<tr>
+<td align="left">Sampling rate</td>
+<td align="left">15 second</td>
+<td align="left">30 second</td>
+</tr>
+<tr>
+<td align="left">Number of epochs</td>
+<td align="left">560</td>
+<td align="left">2880</td>
+</tr>
+<tr>
+<td align="left">GPS start time</td>
+<td align="left">2019 Nov 18  12:45:30.000</td>
+<td align="left">2019 Nov 18  00:00:00.000</td>
+</tr>
+<tr>
+<td align="left">GPS end time</td>
+<td align="left">2019 Nov 18  15:05:15.000</td>
+<td align="left">2019 Nov 18  23:59:30.000</td>
+</tr>
+</tbody>
+</table>
+<p>The test setup (performed at the rooftop of Rokubun's headquarter offices at the
+MediaTIC building) is shown in the following picture:</p>
+<p><img alt="AsteRx test setup" src="../images/septentrio_static_test_mediatic_updated.jpeg" title="AsteRx test setup" /></p>
+<p>The Septentrio AsteRx data has been processed with Jason with the following
+main characteristics:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Processing characteristics</th>
+<th align="left"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Strategy</td>
+<td align="left">Post-Processing Kinematic (PPK)</td>
+</tr>
+<tr>
+<td align="left">Dynamics</td>
+<td align="left">static</td>
+</tr>
+<tr>
+<td align="left">Reference station</td>
+<td align="left">ICGC PLAN (17.4km baseline)</td>
+</tr>
+</tbody>
+</table>
+<p>In order to assess the results, the same data file (converter to RINEX) has been
+processed using <a href="https://webapp.geod.nrcan.gc.ca/geod/tools-outils/ppp.php?locale=en">Canadian Geodetic Survey of Natural Resources Canada Precise Point Positioning</a> (PPP-AR) 
+tool. The differences are shown in the table below:</p>
+<table>
+<thead>
+<tr>
+<th align="center">component</th>
+<th align="center">NRCAN PPP (final products)</th>
+<th align="center">Jason PPK</th>
+<th align="center">difference (vs NRCAN)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">UTM_X (m)</td>
+<td align="center">432640.419</td>
+<td align="center">432640.414</td>
+<td align="center">-0.005</td>
+</tr>
+<tr>
+<td align="center">UTM_Y (m)</td>
+<td align="center">4583770.355</td>
+<td align="center">4583770.352</td>
+<td align="center">-0.003</td>
+</tr>
+<tr>
+<td align="center">ellipsoid (m)</td>
+<td align="center">92.638</td>
+<td align="center">92.561</td>
+<td align="center">-0.077*</td>
+</tr>
+</tbody>
+</table>
+<p>*Please note that we are currently working on fix for JASON so that the antenna models are properly taken in to account, this is expected to substantially close the gap between the NRCAN PPP solution and the JASON PPK.</p>
+<h2 id="smartphone-non-moving-dynamic">Smartphone (non-moving dynamic)</h2>
+<p>This test intends to provide an estimate accuracy of the best accuracy that can
+be achieved with a smartphone in the most benign environment possible (non moving,
+open sky)</p>
+<table>
+<thead>
+<tr>
+<th align="left">Test setup</th>
+<th align="left"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">GNSS receiver</td>
+<td align="left">Xiaomi Mi 8</td>
+</tr>
+<tr>
+<td align="left">Antenna</td>
+<td align="left">internal</td>
+</tr>
+<tr>
+<td align="left">Environment</td>
+<td align="left">Rooftop, open sky</td>
+</tr>
+<tr>
+<td align="left">Data length</td>
+<td align="left">7 minutes</td>
+</tr>
+<tr>
+<td align="left">Sampling rate</td>
+<td align="left">1 second</td>
+</tr>
+<tr>
+<td align="left">Local time</td>
+<td align="left">2019 Nov 19  12:17</td>
+</tr>
+</tbody>
+</table>
+<p>The smartphone was colocated on the same point at which the antenna of
+<a href="#gnss-geodetic-grade-receiver-static">the static test</a>. The data was then
+processed with Jason with the following processing strategy:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Processing characteristics</th>
+<th align="left"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Strategy</td>
+<td align="left">Post-Processing Kinematic (PPK)</td>
+</tr>
+<tr>
+<td align="left">Dynamics</td>
+<td align="left">Smartphone was not moving, but processed with kinematic stochastics</td>
+</tr>
+<tr>
+<td align="left">Reference station</td>
+<td align="left">IGN BCLN (16km baseline)</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="Easting/Northing error (smartphone dynamic)" src="../images/mi8_ppk-kine_BCLN_enu.png" title="Easting/Northing error: Xiaomi Mi 8 (kinematic) - AsteRx(static)" /></p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../examples/" title="Examples" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Examples
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../converter/" title="GNSS converter" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                GNSS converter
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../assets/fonts/font-awesome.css">
+    
+      <a href="https://www.rokubun.cat" class="md-footer-social__link fa fa-globe"></a>
+    
+      <a href="https://twitter.com/rokubn" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="https://www.linkedin.com/company/rokubun/" class="md-footer-social__link fa fa-linkedin"></a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.8c9696ed.js"></script>
+      
+      <script>app.initialize({version:"1.4.2",url:{base:".."}})</script>
+      
+    
+  </body>
+</html>

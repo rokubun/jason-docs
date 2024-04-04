@@ -1,0 +1,694 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+        <link rel="canonical" href="https://jason.docs.rokubun.cat/examples/">
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-4.4.2">
+    
+    
+      
+        <title>Examples - Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.50f26899.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.4f3b7450.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.74668098.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mononame&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mononame","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    
+      
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "UA-148380836-1", "auto")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="rokubun" data-md-color-accent="rokubun-accent">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#usage-examples" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://jason.docs.rokubun.cat/" title="Documentation" class="md-header-nav__button md-logo">
+          
+            <img src="../images/jason_logo.png" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Documentation
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Examples
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/rokubun/jason-docs" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    rokubun/jason-docs
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://jason.docs.rokubun.cat/" title="Documentation" class="md-nav__button md-logo">
+      
+        <img src="../images/jason_logo.png" width="48" height="48">
+      
+    </a>
+    Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/rokubun/jason-docs" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    rokubun/jason-docs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Description" class="md-nav__link">
+      Description
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      GNSS processor
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        GNSS processor
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../quickstart/" title="Quick start" class="md-nav__link">
+      Quick start
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../manual/" title="Manual & API" class="md-nav__link">
+      Manual & API
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Examples
+      </label>
+    
+    <a href="./" title="Examples" class="md-nav__link md-nav__link--active">
+      Examples
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#rover-and-base-files" class="md-nav__link">
+    Rover and base files
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#processing-smartphone-data" class="md-nav__link">
+    Processing smartphone data
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#static-receiver-rtcm-3-format" class="md-nav__link">
+    Static receiver, RTCM 3 format
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../accuracy/" title="Accuracy" class="md-nav__link">
+      Accuracy
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../converter/" title="GNSS converter" class="md-nav__link">
+      GNSS converter
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../strategies/" title="Processing strategies" class="md-nav__link">
+      Processing strategies
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../otherhardware/" title="Minimum data required" class="md-nav__link">
+      Minimum data required
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../resources/" title="Other resources" class="md-nav__link">
+      Other resources
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../contact/" title="Contact us" class="md-nav__link">
+      Contact us
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#rover-and-base-files" class="md-nav__link">
+    Rover and base files
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#processing-smartphone-data" class="md-nav__link">
+    Processing smartphone data
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#static-receiver-rtcm-3-format" class="md-nav__link">
+    Static receiver, RTCM 3 format
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/rokubun/jason-docs/edit/master/docs/examples.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="usage-examples">Usage examples</h1>
+<p>This section includes several usage examples that cover most of the use cases
+that Jason could support. Go to the <a href="../quickstart">quick start guide</a> for a
+n example of a basic usage with a single rover file.</p>
+<p>This section will use the term <em>rover</em> instead of <em>receiver</em> in order to
+distinguish it from a <em>reference receiver</em> (or <em>base receiver</em>), which is
+usually static and is used to provide corrections to the (usually) moving
+(roving) receiver.</p>
+<h2 id="rover-and-base-files">Rover and base files</h2>
+<p>If the area you are surveying does not have a nearby CORS station, you can use
+your own reference GNSS receiver. During the campaign make sure you collect
+data at the same time as your rover and then process the rover GNSS data together
+with the GNSS data from the base station.</p>
+<p>To execute this example, follow these steps:</p>
+<p>1- Download one or several of the test datasets listed below</p>
+<table>
+<thead>
+<tr>
+<th align="center">Use case description</th>
+<th align="center">Rover file</th>
+<th align="center">Base station file</th>
+<th align="center">Event file</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">DJI Phantom 4 RTK drone [<code>*</code>]</td>
+<td align="center"><a href="https://jason-docs.s3.eu-central-1.amazonaws.com/DJI_with_cam_events/101_0082_Rinex.rnx">Rover</a></td>
+<td align="center"><a href="https://jason-docs.s3.eu-central-1.amazonaws.com/DJI_with_cam_events/RTK134_202102051543_13ALG6P0050051.DAT">Base station</a></td>
+<td align="center"><a href="https://jason-docs.s3.eu-central-1.amazonaws.com/DJI_with_cam_events/101_0082_Timestamp.MRK">events file</a></td>
+</tr>
+<tr>
+<td align="center">Topodrone on a Mavic 2 Pro</td>
+<td align="center"><a href="https://jason-docs.s3.eu-central-1.amazonaws.com/Topodrone/TopoDrone.ubx">Rover</a></td>
+<td align="center"><a href="https://jason-docs.s3.eu-central-1.amazonaws.com/Topodrone/MARE00ESP_R_20201201204_22M_01S_MO.rnx">Base station</a></td>
+<td align="center">Within rover file</td>
+</tr>
+<tr>
+<td align="center">Rokbun's ARGONAUT on a drone</td>
+<td align="center"><a href="https://jason-docs.s3.eu-central-1.amazonaws.com/Rokubun+ARGONAUT/argonaut_cam.rok">Rover</a></td>
+<td align="center">No base station</td>
+<td align="center">Within rover file</td>
+</tr>
+<tr>
+<td align="center">Septentrio Mosaic X5 driving</td>
+<td align="center"><a href="https://jason-docs.s3.eu-central-1.amazonaws.com/Cardedeu_Driving_MosaicX5_1Hz/XXXX00CAT_R_20203401333_01H_01S_MO.rnx">Rover</a></td>
+<td align="center"><a href="https://jason-docs.s3.eu-central-1.amazonaws.com/Cardedeu_Driving_MosaicX5_1Hz/MARE00ESP_R_20203401333_82M_01S_MO.rnx">Base station</a></td>
+<td align="center">No events</td>
+</tr>
+</tbody>
+</table>
+<p>[<code>*</code>] Courtesy of <a href="https://terradroneology.com/">Terradroneology</a></p>
+<p>2- Log in with your account and Jason and go to the "GNSS processor" tab.</p>
+<p>3- Drag-and-drop the two downloaded files at the <em>rover</em> and <em>base station</em> boxes,
+as shown below.</p>
+<p><img alt="Upload rover and base station files" src="../images/example_base_upload.png" title="Upload rover and base station files" /></p>
+<p>4- Press "Process file" and wait for the process to finish. The rest of the steps
+are the same as those of the <a href="../quickstart">quick start guide</a>.</p>
+<p>An important note to consider is regarding the <strong>base station coordinates</strong>. If the
+input file is in Rinex format and you are confident that the coordinates of the
+<code>APPROX POSITION XYZ</code> header field are accurate, you do not need to do anything else. However,
+you can indicate a proper set of coordinates for the base station in the field
+<strong>"External base station position (optional)"</strong> in the form of latitude, longitude
+and height. Latitude and longitude shall be expressed in meters while the height
+should be expressed in height above the ellipsoid.</p>
+<p>Also note that the formats supported by the base station are the same as the 
+ones supported by the rover receiver.</p>
+<h2 id="processing-smartphone-data">Processing smartphone data</h2>
+<p>One of the features of Jason is the ability to process GNSS raw measurements
+logged by smartphones. To do this, you can record such data using various
+alternatives:</p>
+<ul>
+<li>Store RINEX data using an app (from e.g. Geo++ or NSL)</li>
+<li>Store raw measurements using Google's <a href="https://github.com/google/gps-measurement-tools/tree/master/GNSSLogger">GNSS logger</a> </li>
+</ul>
+<p>We recommend the usage of Google's app as Jason can directly ingest the files
+generated by it. Just start the app and make sure that both the <strong>Location</strong>
+and <strong>Measurements</strong> switches are turned on (see left panel of lower figure).
+Then head towards the <strong>LOG</strong> tab and click <strong>START LOG</strong> (at the bottom of
+the screen). This will start recording the measurements.</p>
+<table>
+<thead>
+<tr>
+<th align="center">Main GNSS logger page</th>
+<th align="center">Log tab</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><img alt="Main page" src="../images/gnss_logger_01_main_page.jpg" /></td>
+<td align="center"><img alt="Log page" src="../images/gnss_logger_02_log_page.jpg" /></td>
+</tr>
+</tbody>
+</table>
+<p>Once the data take is finished, you will have a <code>gnss_log_&lt;date&gt;.txt</code> file in your smartphone
+(usually under the folder <code>gnss_log</code>). To process this file you have 2 options:</p>
+<ul>
+<li>Directly from the smartphone: open the smartphone browser and go to the
+  Jason web page. Head over "GNSS processor" and select the file you want
+  to process, the smartphone will open then the app to browse the files you
+  have in your device. You will be able then to select and upload the file.</li>
+<li>From a desktop computer: transfer the file to your computer and follow the
+  process described in the <a href="../quickstart">quickstart</a></li>
+</ul>
+<p>As a bonus, Jason will also deliver, besides the <a href="../manual#gnss-processor-files">usual files</a>, the Rinex files
+that resulted from the conversion of the GNSS logger data.</p>
+<h2 id="static-receiver-rtcm-3-format">Static receiver, RTCM 3 format</h2>
+<p>The use case for this example is in the event that you deploy a base station
+so that it transmits the data via NTRIP to an NTRIP caster. Rover receivers
+can then connect to this caster but need the precise coordinates of this base
+station, so you use Jason to get those precise coordinates.
+station.</p>
+<p>Once the base station is serving data to the NTRIP caster, the operator can
+record data into <code>rtcm3</code> format using e.g. <a href="http://www.rtklib.com">rtklib</a>'s <code>str2str</code> tool.
+After you log in into Jason, send the data, as shown in the following figure
+(for a data file <code>bcln0.rtcm3</code>)</p>
+<p><img alt="Process an RTCM3 file in static mode" src="../images/howto_rtcm3_static.png" title="Process an RTCM3 file in static mode" /></p>
+<p>One point to take into account is the fact that the file conversion within
+Jason does not allow the user to specify the approximate date of the file.
+Therefore, unless the RTCM3 file is recent (within the same GPS week), the
+RTCM3 file will not he processed. Therefore, the recommended approach would
+be to convert the rtcm3 file into Rinex and then upload it to the service.
+If you use <code>rtklib</code>'s <code>convbin</code> tool, you can launch the command:</p>
+<div class="highlight"><pre><span></span><code>convbin<span class="w"> </span>-r<span class="w"> </span>rtcm3<span class="w"> </span>-v<span class="w"> </span><span class="m">3</span>.03<span class="w"> </span>-f<span class="w"> </span><span class="m">3</span><span class="w"> </span>-scan<span class="w"> </span>-o<span class="w"> </span>bcln0.rinex<span class="w"> </span>bcln0.rtcm3
+</code></pre></div>
+<p>Then upload the file <code>bcln0.rinex</code> to Jason.</p>
+<p>You will get this station precise coordinates that can be further used by rovers using this station in the NTRIP caster.</p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../manual/" title="Manual & API" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Manual & API
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../accuracy/" title="Accuracy" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Accuracy
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../assets/fonts/font-awesome.css">
+    
+      <a href="https://www.rokubun.cat" class="md-footer-social__link fa fa-globe"></a>
+    
+      <a href="https://twitter.com/rokubn" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="https://www.linkedin.com/company/rokubun/" class="md-footer-social__link fa fa-linkedin"></a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.8c9696ed.js"></script>
+      
+      <script>app.initialize({version:"1.4.2",url:{base:".."}})</script>
+      
+    
+  </body>
+</html>
